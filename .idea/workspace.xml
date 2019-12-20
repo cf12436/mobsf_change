@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c5debb87-61dc-4084-a203-465e70533ff1" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/__init__.py" afterPath="$PROJECT_DIR$/DynamicAnalyzer/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/admin.py" afterPath="$PROJECT_DIR$/DynamicAnalyzer/admin.py" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/models.py" afterPath="$PROJECT_DIR$/DynamicAnalyzer/models.py" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/tests.py" afterPath="$PROJECT_DIR$/DynamicAnalyzer/tests.py" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/tools/__init__.py" afterPath="$PROJECT_DIR$/DynamicAnalyzer/tools/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/tools/onDevice/mobsf_agents/ClipDump.apk" afterPath="$PROJECT_DIR$/DynamicAnalyzer/tools/onDevice/mobsf_agents/ClipDump.apk" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/tools/onDevice/xposed/Xposed.apk" afterPath="$PROJECT_DIR$/DynamicAnalyzer/tools/onDevice/xposed/Xposed.apk" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/tools/onDevice/xposed/hooks.json" afterPath="$PROJECT_DIR$/DynamicAnalyzer/tools/onDevice/xposed/hooks.json" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/tools/onDevice/xposed/modules/AndroidBluePill.apk" afterPath="$PROJECT_DIR$/DynamicAnalyzer/tools/onDevice/xposed/modules/AndroidBluePill.apk" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/tools/onDevice/xposed/modules/Droidmon.apk" afterPath="$PROJECT_DIR$/DynamicAnalyzer/tools/onDevice/xposed/modules/Droidmon.apk" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/tools/onDevice/xposed/modules/JustTrustMe.apk" afterPath="$PROJECT_DIR$/DynamicAnalyzer/tools/onDevice/xposed/modules/JustTrustMe.apk" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/tools/onDevice/xposed/modules/RootCloak.apk" afterPath="$PROJECT_DIR$/DynamicAnalyzer/tools/onDevice/xposed/modules/RootCloak.apk" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/tools/onDevice/xposed/modules/hooks.json" afterPath="$PROJECT_DIR$/DynamicAnalyzer/tools/onDevice/xposed/modules/hooks.json" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/views/__init__.py" afterPath="$PROJECT_DIR$/DynamicAnalyzer/views/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/views/android/__init__.py" afterPath="$PROJECT_DIR$/DynamicAnalyzer/views/android/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/views/android/analysis.py" afterPath="$PROJECT_DIR$/DynamicAnalyzer/views/android/analysis.py" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/views/android/dynamic_analyzer.py" afterPath="$PROJECT_DIR$/DynamicAnalyzer/views/android/dynamic_analyzer.py" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/views/android/environment.py" afterPath="$PROJECT_DIR$/DynamicAnalyzer/views/android/environment.py" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/views/android/operations.py" afterPath="$PROJECT_DIR$/DynamicAnalyzer/views/android/operations.py" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/views/android/report.py" afterPath="$PROJECT_DIR$/DynamicAnalyzer/views/android/report.py" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/views/android/tests_common.py" afterPath="$PROJECT_DIR$/DynamicAnalyzer/views/android/tests_common.py" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/views/android/tests_frida.py" afterPath="$PROJECT_DIR$/DynamicAnalyzer/views/android/tests_frida.py" />
+      <change beforePath="$PROJECT_DIR$/DynamicAnalyzer/views/android/tests_xposed.py" afterPath="$PROJECT_DIR$/DynamicAnalyzer/views/android/tests_xposed.py" />
+      <change beforePath="$PROJECT_DIR$/MalwareAnalyzer/__init__.py" afterPath="$PROJECT_DIR$/MalwareAnalyzer/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/MalwareAnalyzer/admin.py" afterPath="$PROJECT_DIR$/MalwareAnalyzer/admin.py" />
+      <change beforePath="$PROJECT_DIR$/MalwareAnalyzer/malwaredb/malwaredomainlist" afterPath="$PROJECT_DIR$/MalwareAnalyzer/malwaredb/malwaredomainlist" />
+      <change beforePath="$PROJECT_DIR$/MalwareAnalyzer/models.py" afterPath="$PROJECT_DIR$/MalwareAnalyzer/models.py" />
+      <change beforePath="$PROJECT_DIR$/MalwareAnalyzer/tests.py" afterPath="$PROJECT_DIR$/MalwareAnalyzer/tests.py" />
+      <change beforePath="$PROJECT_DIR$/MalwareAnalyzer/views/VirusTotal.py" afterPath="$PROJECT_DIR$/MalwareAnalyzer/views/VirusTotal.py" />
+      <change beforePath="$PROJECT_DIR$/MalwareAnalyzer/views/__init__.py" afterPath="$PROJECT_DIR$/MalwareAnalyzer/views/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/MalwareAnalyzer/views/apkid.py" afterPath="$PROJECT_DIR$/MalwareAnalyzer/views/apkid.py" />
+      <change beforePath="$PROJECT_DIR$/MalwareAnalyzer/views/domain_check.py" afterPath="$PROJECT_DIR$/MalwareAnalyzer/views/domain_check.py" />
+      <change beforePath="$PROJECT_DIR$/MobSF/__init__.py" afterPath="$PROJECT_DIR$/MobSF/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/MobSF/forms.py" afterPath="$PROJECT_DIR$/MobSF/forms.py" />
+      <change beforePath="$PROJECT_DIR$/MobSF/models.py" afterPath="$PROJECT_DIR$/MobSF/models.py" />
+      <change beforePath="$PROJECT_DIR$/MobSF/settings.py" afterPath="$PROJECT_DIR$/MobSF/settings.py" />
+      <change beforePath="$PROJECT_DIR$/MobSF/urls.py" afterPath="$PROJECT_DIR$/MobSF/urls.py" />
+      <change beforePath="$PROJECT_DIR$/MobSF/utils.py" afterPath="$PROJECT_DIR$/MobSF/utils.py" />
+      <change beforePath="$PROJECT_DIR$/MobSF/views/api/rest_api.py" afterPath="$PROJECT_DIR$/MobSF/views/api/rest_api.py" />
+      <change beforePath="$PROJECT_DIR$/MobSF/views/api/rest_api_middleware.py" afterPath="$PROJECT_DIR$/MobSF/views/api/rest_api_middleware.py" />
+      <change beforePath="$PROJECT_DIR$/MobSF/views/home.py" afterPath="$PROJECT_DIR$/MobSF/views/home.py" />
+      <change beforePath="$PROJECT_DIR$/MobSF/views/scanning.py" afterPath="$PROJECT_DIR$/MobSF/views/scanning.py" />
+      <change beforePath="$PROJECT_DIR$/MobSF/wsgi.py" afterPath="$PROJECT_DIR$/MobSF/wsgi.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/__init__.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/admin.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/admin.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/models.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/models.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/test_files/Windows-App-Studio-Sample-App-1.8.0.0-Appx4Fun.com.appx" afterPath="$PROJECT_DIR$/StaticAnalyzer/test_files/Windows-App-Studio-Sample-App-1.8.0.0-Appx4Fun.com.appx" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/test_files/android_src.zip" afterPath="$PROJECT_DIR$/StaticAnalyzer/test_files/android_src.zip" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/test_files/helloworld.apk" afterPath="$PROJECT_DIR$/StaticAnalyzer/test_files/helloworld.apk" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/test_files/helloworld.ipa" afterPath="$PROJECT_DIR$/StaticAnalyzer/test_files/helloworld.ipa" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/test_files/ios_src.zip" afterPath="$PROJECT_DIR$/StaticAnalyzer/test_files/ios_src.zip" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/tests.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/tests.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/tools/__init__.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/tools/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/tools/jadx/bin/jadx" afterPath="$PROJECT_DIR$/StaticAnalyzer/tools/jadx/bin/jadx" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/tools/jadx/bin/jadx-gui" afterPath="$PROJECT_DIR$/StaticAnalyzer/tools/jadx/bin/jadx-gui" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/tools/jadx/bin/jadx-gui.bat" afterPath="$PROJECT_DIR$/StaticAnalyzer/tools/jadx/bin/jadx-gui.bat" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/tools/jadx/bin/jadx.bat" afterPath="$PROJECT_DIR$/StaticAnalyzer/tools/jadx/bin/jadx.bat" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/tools/jadx/bin/jadx.xml" afterPath="$PROJECT_DIR$/StaticAnalyzer/tools/jadx/bin/jadx.xml" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/tools/mac/class-dump-swift" afterPath="$PROJECT_DIR$/StaticAnalyzer/tools/mac/class-dump-swift" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/tools/mac/class-dump-z" afterPath="$PROJECT_DIR$/StaticAnalyzer/tools/mac/class-dump-z" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/tools/mac/jtool.ELF64" afterPath="$PROJECT_DIR$/StaticAnalyzer/tools/mac/jtool.ELF64" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/tools/strings.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/tools/strings.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/__init__.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/android/__init__.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/android/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/android/android_apis.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/android/android_apis.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/android/android_rules.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/android/android_rules.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/android/binary_analysis.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/android/binary_analysis.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/android/cert_analysis.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/android/cert_analysis.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/android/code_analysis.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/android/code_analysis.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/android/converter.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/android/converter.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/android/db_interaction.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/android/db_interaction.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/android/dvm_permissions.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/android/dvm_permissions.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/android/find.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/android/find.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/android/icon_analysis.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/android/icon_analysis.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/android/java.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/android/java.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/android/manifest_analysis.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/android/manifest_analysis.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/android/manifest_view.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/android/manifest_view.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/android/smali.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/android/smali.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/android/static_analyzer.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/android/static_analyzer.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/android/strings.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/android/strings.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/android/win_fixes.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/android/win_fixes.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/ios/__init__.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/ios/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/ios/appstore.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/ios/appstore.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/ios/binary_analysis.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/ios/binary_analysis.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/ios/code_analysis.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/ios/code_analysis.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/ios/db_interaction.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/ios/db_interaction.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/ios/ios_apis.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/ios/ios_apis.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/ios/ios_rules.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/ios/ios_rules.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/ios/plist_analysis.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/ios/plist_analysis.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/ios/static_analyzer.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/ios/static_analyzer.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/ios/view_source.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/ios/view_source.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/shared_func.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/shared_func.py" />
+      <change beforePath="$PROJECT_DIR$/StaticAnalyzer/views/windows.py" afterPath="$PROJECT_DIR$/StaticAnalyzer/views/windows.py" />
+      <change beforePath="$PROJECT_DIR$/install/__init__.py" afterPath="$PROJECT_DIR$/install/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/install/windows/__init__.py" afterPath="$PROJECT_DIR$/install/windows/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/install/windows/config.txt" afterPath="$PROJECT_DIR$/install/windows/config.txt" />
+      <change beforePath="$PROJECT_DIR$/install/windows/readme.md" afterPath="$PROJECT_DIR$/install/windows/readme.md" />
+      <change beforePath="$PROJECT_DIR$/install/windows/rpc_client.py" afterPath="$PROJECT_DIR$/install/windows/rpc_client.py" />
+      <change beforePath="$PROJECT_DIR$/install/windows/setup.py" afterPath="$PROJECT_DIR$/install/windows/setup.py" />
+      <change beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
+      <change beforePath="$PROJECT_DIR$/run.sh" afterPath="$PROJECT_DIR$/run.sh" />
+      <change beforePath="$PROJECT_DIR$/scripts/check_android_permissions.py" afterPath="$PROJECT_DIR$/scripts/check_android_permissions.py" />
+      <change beforePath="$PROJECT_DIR$/scripts/clean.sh" afterPath="$PROJECT_DIR$/scripts/clean.sh" />
+      <change beforePath="$PROJECT_DIR$/scripts/cloud/cloud_server.py" afterPath="$PROJECT_DIR$/scripts/cloud/cloud_server.py" />
+      <change beforePath="$PROJECT_DIR$/scripts/mass_static_analysis.py" afterPath="$PROJECT_DIR$/scripts/mass_static_analysis.py" />
+      <change beforePath="$PROJECT_DIR$/setup.sh" afterPath="$PROJECT_DIR$/setup.sh" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/images/favicon.ico" afterPath="$PROJECT_DIR$/static/images/favicon.ico" />
+      <change beforePath="$PROJECT_DIR$/static/images/sort_asc.png" afterPath="$PROJECT_DIR$/static/images/sort_asc.png" />
+      <change beforePath="$PROJECT_DIR$/static/images/sort_asc_disabled.png" afterPath="$PROJECT_DIR$/static/images/sort_asc_disabled.png" />
+      <change beforePath="$PROJECT_DIR$/static/images/sort_both.png" afterPath="$PROJECT_DIR$/static/images/sort_both.png" />
+      <change beforePath="$PROJECT_DIR$/static/images/sort_desc.png" afterPath="$PROJECT_DIR$/static/images/sort_desc.png" />
+      <change beforePath="$PROJECT_DIR$/static/images/sort_desc_disabled.png" afterPath="$PROJECT_DIR$/static/images/sort_desc_disabled.png" />
+      <change beforePath="$PROJECT_DIR$/templates/general/about.html" afterPath="$PROJECT_DIR$/templates/general/about.html" />
+      <change beforePath="$PROJECT_DIR$/templates/general/apidocs.html" afterPath="$PROJECT_DIR$/templates/general/apidocs.html" />
+      <change beforePath="$PROJECT_DIR$/templates/general/index.html" afterPath="$PROJECT_DIR$/templates/general/index.html" />
+      <change beforePath="$PROJECT_DIR$/templates/general/not_found.html" afterPath="$PROJECT_DIR$/templates/general/not_found.html" />
+      <change beforePath="$PROJECT_DIR$/templates/general/recent.html" afterPath="$PROJECT_DIR$/templates/general/recent.html" />
+      <change beforePath="$PROJECT_DIR$/templates/general/search.html" afterPath="$PROJECT_DIR$/templates/general/search.html" />
+      <change beforePath="$PROJECT_DIR$/templates/general/view.html" afterPath="$PROJECT_DIR$/templates/general/view.html" />
+      <change beforePath="$PROJECT_DIR$/templates/pdf/android_binary_analysis.pdf.html" afterPath="$PROJECT_DIR$/templates/pdf/android_binary_analysis.pdf.html" />
+      <change beforePath="$PROJECT_DIR$/templates/pdf/android_source_analysis_pdf.html" afterPath="$PROJECT_DIR$/templates/pdf/android_source_analysis_pdf.html" />
+      <change beforePath="$PROJECT_DIR$/templates/pdf/ios_binary_analysis_pdf.html" afterPath="$PROJECT_DIR$/templates/pdf/ios_binary_analysis_pdf.html" />
+      <change beforePath="$PROJECT_DIR$/templates/pdf/ios_source_analysis_pdf.html" afterPath="$PROJECT_DIR$/templates/pdf/ios_source_analysis_pdf.html" />
+      <change beforePath="$PROJECT_DIR$/templates/static_analysis/android_binary_analysis.html" afterPath="$PROJECT_DIR$/templates/static_analysis/android_binary_analysis.html" />
+      <change beforePath="$PROJECT_DIR$/templates/static_analysis/android_source_analysis.html" afterPath="$PROJECT_DIR$/templates/static_analysis/android_source_analysis.html" />
+      <change beforePath="$PROJECT_DIR$/templates/static_analysis/ios_binary_analysis.html" afterPath="$PROJECT_DIR$/templates/static_analysis/ios_binary_analysis.html" />
+      <change beforePath="$PROJECT_DIR$/templates/static_analysis/ios_source_analysis.html" afterPath="$PROJECT_DIR$/templates/static_analysis/ios_source_analysis.html" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="143" />
+    <option name="y" value="36" />
+    <option name="width" value="1340" />
+    <option name="height" value="748" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MObsf1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MObsf1" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="MObsf1" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MObsf1" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c5debb87-61dc-4084-a203-465e70533ff1" name="Default" comment="" />
+      <created>1576811970424</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576811970424</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20565553" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/logs/debug.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

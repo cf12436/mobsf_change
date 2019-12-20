@@ -1,0 +1,1005 @@
+
+   {% block content %}
+    {% load i18n %}
+<style>
+body {
+    font: normal 30px Verdana, Arial, sans-serif;
+}
+
+</style>
+<h1 align="center" class="page-header">{%trans 'Static Analysis' %} - {{name}} </h1>
+<hr>  
+                <div class="col-lg-2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><span class="glyphicon glyphicon-file"></span>{%trans 'APP SCORE' %} </h3><hr>
+                            </div>
+
+                            <div class="panel-body">
+                                <div class="list-group">
+                  <p>                                       
+                     <span class="label label-primary"><b>{%trans 'Average CVSS Score' %}: </b>{{ average_cvss }}</span></p>
+                  <p>
+                     <span class="label label-primary"><b>{%trans 'App Security Score' %}: </b>{{ security_score }}/100</span>
+                  </p>
+                {% if VT_RESULT and VT_RESULT.total %}
+	          <p>			    
+                    <span class="label label-primary"><b>{%trans 'VirusTotal Detection' %}: </b>{{ VT_RESULT.positives }}/{{ VT_RESULT.total }}</span>
+                  </p>
+                {% endif %}
+                {% if trackers %}
+                     <p>
+                      <span class="label label-primary"><b>{%trans 'Trackers Detection' %}: </b>{{ trackers.detected_trackers }}/{{ trackers.total_trackers }}</span>
+                     </p>
+                {% endif %}
+               </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+                  <div class="col-lg-7">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> <span class="glyphicon glyphicon-file"></span> FILE INFORMATION</h3><hr>
+                            </div>
+
+                            <div class="panel-body">
+                                <div class="list-group">
+									<p>                                       
+									   <span class="label label-primary"><b>{%trans 'Name' %}: </b></span>
+                                    {{ name }}
+                                    </p>
+									<p>
+                                       <span class="label label-primary"><b>{%trans 'Name' %}Size:</b></span>
+                                    {{ size }}
+                                   </p><p>
+                                       <span class="label label-primary"><b>MD5: </b></span>
+                                    {{ md5 }}
+                                    
+                                   </p><p>
+								     <span class="label label-primary"><b>SHA1: </b></span>
+                                    {{ sha1 }}
+                                  
+									 </p><p>
+								     <span class="label label-primary"><b>SHA256: </b></span>
+                                    {{ sha256 }}
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+<hr>
+                  <div class="col-lg-5">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> <span class="glyphicon glyphicon-phone"></span>{%trans 'APP INFORMATION' %} </h3><hr>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <p>                                       
+					    <span class="label label-primary"><b>{%trans 'Name' %}: </b></span>
+                                        {{ real_name }}
+                                    </p>
+									<p>                                       
+									   <span class="label label-primary"><b>{%trans 'Package Name' %}: </b></span>
+                                    {{ packagename }}
+                                    </p>
+									<p>
+                                       <span class="label label-primary"><b>{%trans 'Main Activity' %}: </b></span>
+                                    {{ mainactivity }}
+                                   </p><p>
+                                       <span class="label label-primary"><b>{%trans 'Target SDK' %}: </b></span>
+                                    {{ targetsdk }}
+                                    </p><p>
+								     <span class="label label-primary"><b>{%trans 'Min SDK' %} : </b></span>
+                                    {{ minsdk }}
+                                  </p><p>
+									
+								     <span class="label label-primary"><b>{%trans 'Max SDK' %}: </b></span>
+                                    {{ maxsdk }}
+									</p><p>
+									<span class="label label-primary"><b>{%trans 'Android Version Name' %}: </b></span>
+                                    {{ androvername }}
+									</p><p>
+									<span class="label label-primary"><b>{%trans 'Android Version Code' %}: </b></span>
+                                    {{ androver }}
+									</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                     <div class="col-lg-5">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> <span class="glyphicon glyphicon-phone"></span>{%trans 'PLAY STORE INFORMATION' %} </h3><hr>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+
+                                   {% if not play_details.error %}
+                  <p>                                       
+                    <span class="label label-info"><b>{%trans 'Title' %}: </b></span>
+                    {{ play_details.title }}
+                  </p>
+                  <p>                                       
+                    <span class="label label-info"><b>{%trans 'Score' %}: </b></span>
+                  {{ play_details.score}}
+
+                   <span class="label label-info"><b>{%trans 'Installs' %}: </b></span>
+                    {{ play_details.installs }}
+
+                   <span class="label label-info"><b>{%trans 'Price' %}: </b></span>
+                      {{ play_details.price }}
+
+                  <span class="label label-info"><b>{%trans 'Android Version Support' %}: </b></span>
+                    {{ play_details.androidVersionText }}
+                   
+                    <span class="label label-info"><b>{%trans 'Category' %}: </b></span>
+		    {{ play_details.genre }}
+
+                    <span class="label label-info"><b>{%trans 'Play Store URL' %}  : </b></span>
+                      <a target="_blank" href="{{ play_details.url }}"> {{ packagename }} </a>
+                  </p>
+                  
+                  <p>
+                  <span class="label label-info"><b>{%trans 'Developer Details' %}: </b></span>
+                      {{play_details.developer}},  
+                      {{play_details.developerId}}, 
+                      {{play_details.developerAddress }},
+                      {{play_details.developerWebsite}}, 
+                      {{play_details.developerEmail}}, 
+                  </p>
+		  <p>
+                  <span class="label label-info"><b>{%trans 'Release Date' %}: </b></span>
+		   {{ play_details.released }}
+		   <span class="label label-info"><b>{%trans 'Privacy Policy' %}: </b></span>
+                   <a target="_blank" href="{{ play_details.privacyPolicy }}">{%trans 'Privacy link' %}</a>
+		  </p>
+                 <p>                                       
+                      <span class="label label-info"><b>{%trans 'Description' %}: </b></span>
+                      <pre>{{ play_details.description }}</pre>
+                  </p>
+              {%  endif  %}
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+
+                        </div>
+                  		  <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> <span class="glyphicon glyphicon-eye-close"></span>{%trans 'CERTIFICATE' %} </h3><hr>
+                            </div>
+                            <div class="panel-body">
+                            <pre>
+                              {{ certinfo | safe}}
+
+{% if issued == "good" %} 
+<strong>{%trans 'Name' %}Certificate Status: </strong><span class="label label-success">{%trans 'Name' %}Good</span>
+{% elif issued == "bad" %}
+<strong>{%trans 'Name' %}Certificate Status: </strong><span class="label label-danger">{%trans 'Name' %}Bad</span>
+<strong>{%trans 'Name' %}Description:</strong>{%trans 'Name' %}App Signed by 'Android Debug' Certificate.
+Production ready applications should not be signed with 'Android Debug' Certificate.
+{% elif issued == "missing" %}
+<strong>{%trans 'Certificate Status' %}: </strong><span class="label label-warning">{%trans 'Certificate not found' %}</span>
+{% elif issued == "bad hash" and sha256Digest is True %}
+<strong>{%trans 'Certificate Status' %}: </strong><span class="label label-warning">{%trans 'Warning' %}</span>
+<strong>{%trans 'Description' %}:</strong>{%trans 'The app is signed with `SHA1withRSA`. SHA1 hash algorithm is known to have collision issues.' %}
+<strong>{%trans 'Note' %}:</strong>{%trans 'The manifest indicates `SHA256withRSA` is in use. Be sure to manually confirm this issue.' %}
+{% elif issued == "bad hash" %}
+<strong>{%trans 'Certificate Status' %}: </strong><span class="label label-danger">{%trans 'Bad' %}</span>
+<strong>{%trans 'Description' %}:</strong>{%trans 'The app is signed with `SHA1withRSA`. SHA1 hash algorithm is known to have collision issues.' %}
+{% endif %}
+                            </pre>
+                            </div>
+                        </div>
+                    </div> 
+                    <hr>
+					<div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i><span class="glyphicon glyphicon-ok"></span> {%trans 'PERMISSIONS' %}</h3><hr>
+                            </div>
+                            <div class="panel-body">
+								  <div class="table-responsive">
+                    <table>
+                      <thead>
+                    <tr>
+                        <th>{%trans 'PERMISSION' %}</th>
+                        <th>{%trans 'STATUS' %}</th>
+                        <th>{%trans 'INFO' %} </th>
+                        <th>{%trans 'DESCRIPTION' %}</th>
+                      </tr>
+                                        </thead>
+                                        <tbody>
+                    {% for perm,desc in permissions.items %}
+                    <tr>
+                    <td>{{ perm }}</td>
+                    <td>{{ desc.status }}</td>
+                    <td>{{ desc.info }}</td>
+                    <td>{{ desc.description }}</td>
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                    </table>
+                                
+                            </div>
+                        </div>
+                    </div>
+					</div>
+                    <hr>
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i><span class=""></span>{%trans 'ANDROID LIBRARY BINARY ANALYSIS' %}</h3><hr>
+                            </div>
+                            <div class="panel-body">
+                  <div class="table-responsive">
+                     <table class="table table-bordered table-hover table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>{%trans 'ISSUE' %}</th>
+                                                <th>{%trans 'SEVERITY' %}</th>
+                                                <th>{%trans 'DESCRIPTION' %}</th>
+                                                <th>{%trans 'FILES' %}</th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                    {% for item in binary_analysis %}
+                      <tr>
+                        <td>
+                        {{item|key:"title" | safe}}
+                        </td>
+                        <td>
+                          {% if item|key:"stat" == "high" %}
+                            <span class="label label-danger">{%trans 'high' %}</span>
+                          {% elif item|key:"stat" == "info" %}
+                            <span class="label label-info">{%trans 'info' %}</span>
+                          {% elif item|key:"stat" == "medium" %}
+                            <span class="label label-warning">{%trans 'medium' %}</span>
+                          {% endif %}
+                         
+                        </td>
+                        <td>
+                        {{item|key:"desc"}}
+                        </td>
+                        <td>
+                        {{item|key:"file"}}
+                        </td>
+   
+                       </tr>
+                     {% endfor %}
+                    {% if not binary_analysis  %}
+                      <tr>
+                         <td>
+                             <p> {%trans 'No issue found' %} </p>
+                         </td>
+                         <td>
+                             <span class="label label-info">{%trans 'info' %}</span>
+                         </td>
+                      </tr>
+                    {% endif %}
+                    </tbody>
+                    </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <hr>
+
+                    <!-- ============================================================= -->
+        {% if VT_RESULT %}
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                             <h3 class="panel-title"><i class="fa fa-bug"></i>{%trans 'VirusTotal Report' %}</h3><hr>
+                        </div>
+                        <div class="panel-body">
+                        <p> {{ VT_RESULT.positives }} / {{ VT_RESULT.total }}&nbsp;{%trans 'AVs found this file Malicious!' %}  </p>
+                        {% if VT_RESULT.positives %}
+                          <div class="table-responsive">
+                                <table class="table table-bordered table-hover table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>{%trans 'AV' %}</th>
+                                                        <th>{%trans 'Detection' %}</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                {% for av_name,av_result in VT_RESULT.scans.items %}
+                                                    {% if av_result.detected == True %}
+                                                       <tr>
+                                                            <td>
+                                                                {{ av_name }}
+                                                            </td>
+                                                           <td>
+                                                                <span class="label label-danger">{{ av_result.result }}</span>
+                                                            </td>
+                                                      </tr>
+                                                    {% endif %}
+                                                {% endfor %}
+                                                </tbody>
+                                </table>
+                          </div>
+                        {% endif %}
+                        </div>
+                    </div>
+                </div>
+        {% endif %}
+
+                    <!-- ============================================================= -->
+
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                 <h3 class="panel-title"><i class="fa fa-bug"></i>{%trans 'APKiD ANALYSIS' %} </h3><hr>
+                            </div>
+                            <div class="panel-body">
+                  <div class="table-responsive">
+                         <table class="table table-bordered table-hover table-striped">
+                  <thead>
+                      <tr>
+                          <th>{%trans 'FILE' %}</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      {% if apkid %}
+                       {% for file, details in apkid.items %}
+                       <tr>
+                         <td>
+                             {{file}}
+                        </td>
+                        <td>
+                            <table class="table table-bordered table-hover table-striped">
+                              <thead>
+                                  <tr>
+                                      <th>{%trans 'FINDINGS' %}</th>
+                                      <th>{%trans 'DETAILS' %}</th>
+                                  </tr>
+                              </thead>
+                            <tbody>
+                            {% for detail, idens in details.items %}
+                            <tr>
+                              <td>
+                               {% if detail == "anti_vm" %}
+                               <span class="label label-warning">{%trans 'Anti-VM Code' %}</span>
+                               {% elif detail == "anti_disassembly" %}
+                               <span class="label label-warning">{%trans 'Anti Disassembly Code' %}</span>
+                               {% elif detail == "anti_debug" %}
+                               <span class="label label-warning">{%trans 'Anti Debug Code' %}</span>
+                               {% elif detail == "compiler" %}
+                               <span class="label label-info">{%trans 'Compiler' %}</span>
+                               {% elif detail == "abnormal" %}
+                               <span class="label label-warning">{%trans 'Abnormal Code' %}</span>
+                               {% elif detail == "obfuscator" %}
+                               <span class="label label-warning">{%trans 'Obfuscator' %}</span>
+                               {% elif detail == "protector" %}
+                               <span class="label label-info">{%trans 'Protector' %}</span>
+                               {% elif detail == "packer" %}
+                               <span class="label label-danger">{%trans 'Packer Found' %}</span>
+                               {% elif detail == "dropper" %}
+                               <span class="label label-danger">{%trans 'Dropper Found' %}</span>
+                               {% elif detail == "manipulator" %}
+                               <span class="label label-warning">{%trans 'Manipulator Found' %}</span>
+                               {% else %}
+                               <span class="label label-info">{{detail}}</span>
+                               {% endif %}
+                            </td>
+                              <td> {% for idn in idens %} {{ idn }}</br> {% endfor %}</td>
+                            </tr>
+                            {% endfor %}
+                           </tbody>
+                            </table>
+                        </td>
+                 
+                        </tr>
+                         {% endfor %}
+                      {% else %}
+                      <p align="center"><strong>{%trans 'APKiD not enabled' %}.</strong></p>
+                      {% endif %}
+                    </tbody>
+                    </table>
+
+                            </div>
+                  </div>
+                        </div>
+                    </div>
+                    </div>
+                    <hr>
+
+                         <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class=""></i><span class=""></span> {%trans 'BROWSABLE ACTIVITIES' %}</h3><hr>
+
+                            </div>
+                            <div class="panel-body">
+                                  <div class="table-responsive">
+                                   <table class="table table-bordered table-hover table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>{%trans 'ACTIVITY' %}</th>
+                                                <th>{%trans 'INTENT' %}</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                      {% for activity,intent_details in browsable_activities.items %}
+                          <tr>
+                            <td>{{activity}}</td>
+                            <td>
+                                   {% if intent_details|key:"schemes" %}
+                                      <strong>{%trans 'Schemes' %}</strong>:
+                                      {% for scheme in intent_details|key:"schemes" %}
+                                        {{scheme}},
+                                      {% endfor %}
+                                       </br>
+                                   {% endif %}
+                                   {% if intent_details|key:"hosts" %}
+                                      <strong>{%trans 'Hosts' %}:</strong> {% for host in intent_details|key:"hosts" %}
+                                        {{host}},
+                                      {% endfor %} 
+                                      </br>
+                                   {% endif %}
+                                   {% if intent_details|key:"ports" %}
+                                      <strong>{%trans 'Ports' %}:</strong> {% for port in intent_details|key:"ports" %}
+                                        {{port}},
+                                      {% endfor %} 
+                                      </br>
+                                   {% endif %}
+                                   {% if intent_details|key:"mime_types" %}
+                                      <strong>{%trans 'Mime Types' %} :</strong> {% for mime in intent_details|key:"mime_types" %}
+                                        {{mime}},
+                                      {% endfor %} 
+                                      </br>
+                                   {% endif %}
+                                   {% if intent_details|key:"paths" %}
+                                      <strong>{%trans 'Paths' %}:</strong> {% for path in intent_details|key:"paths" %}
+                                        {{path}},
+                                      {% endfor %} 
+                                      </br>
+                                   {% endif %}
+                                   {% if intent_details|key:"path_prefixs" %}
+                                      <strong>{%trans 'Path Prefixes' %}:</strong> {% for prefix in intent_details|key:"path_prefixs" %}
+                                        {{prefix}},
+                                      {% endfor %} 
+                                      </br>
+                                   {% endif %}
+                                   {% if intent_details|key:"path_patterns" %}
+                                      <strong>{%trans 'Path Patterns' %}:</strong> {% for pattern in intent_details|key:"path_patterns" %}
+                                        {{pattern}},
+                                      {% endfor %} 
+                                      </br>
+                                   {% endif %}
+                              {% endfor %}
+                            </td>
+                          </tr>
+                    </tbody>
+                    </table>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+<hr>
+			<div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i><span class="glyphicon glyphicon-search"></span> {%trans 'MANIFEST ANALYSIS' %}</h3><hr>
+
+                            </div>
+                            <div class="panel-body">
+								  <div class="table-responsive">
+                                    <table class="table table-bordered table-hover table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>{%trans 'ISSUE' %}</th>
+                                                <th>{%trans 'SEVERITY' %}</th>
+												<th>{%trans 'DESCRIPTION' %}</th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+									  {% for item in manifest %}
+                      <tr>
+                        <td>
+                        {{item|key:"title" | safe}}
+                        </td>
+                        <td>
+
+                          {% if item|key:"stat" == "high" %}
+                            <span class="label label-danger">{%trans 'high' %}</span>
+                          {% elif item|key:"stat" == "info" %}
+                            <span class="label label-info">{%trans 'info' %}</span>
+                          {% elif item|key:"stat" == "medium" %}
+                            <span class="label label-warning">{%trans 'medium' %}</span>
+                          {% endif %}
+                         
+                        </td>
+                        <td>
+                        {{item|key:"desc"}}
+                        </td>
+   
+                       </tr>
+                     {% endfor %}
+
+
+										</tbody>
+										</table>
+                                
+                            </div>
+                        </div>
+                    </div>
+					</div>
+<hr>
+
+       
+						<div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i><span class="glyphicon glyphicon-warning-sign"></span> {%trans 'Name' %}CODE ANALYSIS</h3><hr>
+                            </div>
+                            <div class="panel-body">
+								  <div class="table-responsive">
+                                    <table class="table table-bordered table-hover table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>{%trans 'ISSUE' %}</th>
+                                                <th>{%trans 'SEVERITY' %}</th>
+                                                <th>{%trans 'CVSS' %}</th>
+                                                <th>{%trans 'CWE' %}</th>
+                                                <th>{%trans 'OWASP' %}</th>
+                                                <th>{%trans 'FILES' %}</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+										{% for issue, details in findings.items %}
+                  <tr>
+                  <td>
+                  {{ issue }}
+                  </td>
+                  <td>
+                    {% if details|key:"level" == "high" %}
+                      <span class="label label-danger">{%trans 'high' %}</span>
+                      {% elif details|key:"level" == "good" %}
+                      <span class="label label-success">{%trans 'secure' %}</span>
+                      {% elif details|key:"level" == "warning" %}
+                      <span class="label label-warning">{%trans 'warning' %}</span>
+                      {% elif details|key:"level" == "info" %}
+                      <span class="label label-info">{%trans 'info' %}</span>
+                      {% endif %}
+                  </td>
+                  <td><b>{{ details|key:"cvss" }}</b></td>
+                  <td><b>{{ details|key:"cwe" }}</b></td>
+                  <td><b>{{ details|key:"owasp" }}</b></td>
+                  <td>
+                  {% for path in details|key:"path" %}
+                   <a href="../ViewSource/?file={{ path }}&md5={{ md5 }}&type=apk"> {{ path }}</a>
+                  </br>
+                  {% endfor %}
+                  </td>
+                </tr>    
+              {% endfor %} 
+										</tbody>
+										</table>
+                                
+                            </div>
+                        </div>
+                    </div>
+					</div>		
+                    <hr>
+	<div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i><span class="glyphicon glyphicon-tasks"></span>{%trans 'ANDROID API' %} </h3><hr>
+                            </div>
+                            <div class="panel-body">
+								  <div class="table-responsive">
+                                    <table class="table table-bordered table-hover table-striped">
+                                        <thead>
+                                            <tr>
+                                                
+                                                <th>API</th>
+												<th>{%trans 'FILES' %}</th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+										{% for desc, details in api.items %}
+                  <tr>
+                  <td>
+                  {{ desc }}
+                  </td>
+                  <td>
+                  {% for path in details|key:"path" %}
+                   <a href="../ViewSource/?file={{ path }}&md5={{ md5 }}&type=apk"> {{ path }}</a>
+                  </br>
+                  {% endfor %}
+                  </td>
+                </tr>    
+              {% endfor %} 
+										</tbody>
+										</table>
+                                
+                            </div>
+                        </div>
+                    </div>
+					</div>
+	<hr>
+					    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i><span class="glyphicon glyphicon-globe"></span> URLS</h3><hr>
+                            </div>
+                            <div class="panel-body">
+								  <div class="table-responsive">
+                                    <table class="table table-bordered table-hover table-striped">
+                                        {% if urls %} 
+                  <thead>
+                  <tr>
+                     <th>URL</th>
+                     <th>File</th>
+                  </tr>
+                 </thead>
+                    {% endif %}
+                                        <tbody>
+								
+									{% for urldict in urls %}
+                    <tr>
+                       <td>
+                       {% for u in urldict|key:"urls" %}
+                         {{ u }} </br>
+                       {% endfor %}
+                        </td>
+
+                       <td>
+                          <a href="../ViewSource/?file={{urldict|key:"path"}}&md5={{ md5}}&type=apk">{{urldict|key:"path"}}</a>
+                          
+                       </td>
+                    </tr>
+                  {% endfor %} 
+										</tbody>
+										</table>
+                                
+                            </div>
+                        </div>
+                    </div>
+					</div>
+          <hr>
+              <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i><span class="glyphicon glyphicon-globe"></span> {%trans 'FIREBASE DATABASES' %}</h3><hr>
+                            </div>
+                            <div class="panel-body">
+                  <div class="table-responsive">
+                                    <table class="table table-bordered table-hover table-striped">
+                 {% if firebase %} 
+                  <thead>
+                  <tr>
+                     <th>URL</th>
+                     <th>{%trans 'Database URL' %}</th>
+                  </tr>
+                 </thead>
+                    {% endif %}
+                                        <tbody>
+                
+                 
+                  {% for item in firebase %}
+                    <tr>
+                       <td>
+                       {{ item.url }}
+                        </td>
+
+                       <td>
+                         {% if item.open %}
+                          <span class="label label-danger">{%trans 'insecure' %}</span></br>{%trans 'Firebase DB is exposed publically' %}.
+                        {% else %}
+                         <span class="label label-primary">{%trans 'Info' %}</span></br>{%trans 'App talks to a Firebase Database' %}.
+                         {% endif %}
+                      
+                       </td>
+                    </tr>
+                  {% endfor %} 
+                    </tbody>
+                    </table>
+                                
+                            </div>
+                        </div>
+                    </div>
+          </div>
+                    <hr>
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i><span class="glyphicon glyphicon-screenshot"></span>{%trans 'MALWARE CHECK' %} </h3><hr>
+                            </div>
+                            <div class="panel-body">
+                                  <div class="table-responsive">
+                                    <table class="table table-bordered table-hover table-striped">
+                                        {% if urls %} 
+                  <thead>
+                  <tr>
+                     <th>{%trans 'Domain' %}</th>
+                     <th>{%trans 'Status' %}</th>
+                  </tr>
+                 </thead>
+                  {% endif %}
+                                      <tbody>
+                
+                  {% for domain, details in domains.items %}
+                  <tr><td>{{domain}}</td><td> 
+
+                    {% if details|key:"bad" == "yes" %}
+                    <span class="label label-danger">{%trans 'malware' %}</span></br>
+<pre>
+<strong>{%trans 'URL' %}: </strong>{{details|key:"domain_or_url"}}
+<strong>{%trans 'IP' %}: </strong><span class="label label-danger">{{details|key:"ip"}}</span>
+<strong>{%trans 'Description' %}: </strong>{{details|key:"desc"}}
+</pre>
+                  {% else %}
+                    <span class="label label-success">{%trans 'good' %}</span></br>
+                  {% endif %}
+
+
+                  </td> </tr>
+                  {% endfor %}
+                   
+                    </tbody>
+                                        </table>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <hr>
+							    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i><span class="glyphicon glyphicon-envelope"></span>{%trans 'EMAILS' %} </h3><hr>
+                            </div>
+                            <div class="panel-body">
+								  <div class="table-responsive">
+                                    <table class="table table-bordered table-hover table-striped">
+                                        {% if emails %} 
+                  <thead>
+                  <tr>
+                     <th>{%trans 'Email' %}</th>
+                     <th>{%trans 'File' %}</th>
+                  </tr>
+                 </thead>
+                 {% endif %}
+                                        <tbody>
+								
+									{% for email_dict in emails %}
+                    <tr>
+                       <td>
+                       {% for em in email_dict|key:"emails" %}
+                         {{ em }} </br>
+                       {% endfor %}
+                        </td>
+
+                       <td>
+                          <a href="../ViewSource/?file={{email_dict|key:"path"}}&md5={{ md5}}&type=apk">{{email_dict|key:"path"}}</a>
+                          
+                       </td>
+                    </tr>
+                  {% endfor %} 
+										</tbody>
+										</table>
+                                
+                            </div>
+                        </div>
+                    </div>
+					</div>
+                            <hr>	
+                                <div class="col-lg-12">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i><span
+                                                    class=""></span> {%trans 'TRACKERS' %}</h3>
+                                            <hr>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-hover table-striped">
+                                                    {% if trackers %}
+                                                    <thead>
+                                                        <tr>
+                                                            <th>{%trans 'Tracker Name' %} </th>
+                                                            <th>{%trans 'URL' %}</th>
+                                                        </tr>
+                                                    </thead>
+                                                    {% endif %}
+                                                    <tbody>
+                                
+                                                        {% for trk in trackers|key:"trackers" %}
+                                                        <tr>
+                                                            {% for k, v in trk.items %}
+                                                            <td>
+                                                                {{k}}
+                                                            </td>
+                                                            <td>
+                                                                {{v}}
+                                                            </td>
+                                                            {% endfor %}
+                                                        </tr>
+                                                        {% endfor %}
+                                                    </tbody>
+                                                </table>
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i><span class="glyphicon glyphicon-lock"></span> {%trans 'FILE ANALYSIS' %} </h3><hr>
+                            </div>
+                            <div class="panel-body">
+								  <div class="table-responsive">
+                                    {% if certz %}
+                                    <table class="table table-bordered table-hover table-striped">
+                                              <thead>
+                                            <tr>
+                                                <th>{%trans 'ISSUE' %}</th>
+                                                <th>{%trans 'FILES' %}</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+									{{ certz | safe}} 
+										</tbody>
+										</table>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+					</div>
+  			<hr><div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i><span class="glyphicon glyphicon-sort-by-alphabet-alt"></span>{%trans 'STRINGS' %} </h3><hr>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+									<p>  
+								  
+										{% for val in strings %}
+									    
+										 {{ val }}<br>
+										
+										{% endfor %}									
+																
+									
+									</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+							<hr>
+                   <div class="col-lg-5">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i><span class="glyphicon glyphicon-credit-card"></span>{%trans 'ACTIVITIES' %} </h3><hr>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+									<p>  
+								{% for act in activities %}
+									{{ act}} <br>
+								{% endfor %}									
+									
+									</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+          <hr><div class="col-lg-5">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i><span class="glyphicon glyphicon-hdd"></span>{%trans 'PROVIDERS' %} </h3><hr>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+									<p>  
+								{% for prv in providers %}
+									{{ prv}} <br>
+								{% endfor %}									
+									
+									</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+			<hr>		<div class="col-lg-5">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i><span class="glyphicon glyphicon-sort-by-attributes-alt"></span> {%trans 'RECEIVERS' %}</h3><hr>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+									<p>  
+								{% for rcv in receivers %}
+									{{ rcv}} <br>
+								{% endfor %}									
+									
+									</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+			<hr>		<div class="col-lg-5">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i><span class="glyphicon glyphicon-refresh"></span> {%trans 'SERVICES' %}</h3><hr>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+									<p>  
+								{% for srv in services %}
+									{{ srv}} <br>
+								{% endfor %}									
+									
+									</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+			<hr>			<div class="col-lg-5">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i><span class="glyphicon glyphicon-chevron-down"></span> {%trans 'LIBRARIES' %}</h3><hr>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+									<p>  
+								{% for lib in libraries %}
+									{{ lib }} <br>
+								{% endfor %}									
+									
+									</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div><hr>  <div class="col-lg-7">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i><span class="glyphicon glyphicon-folder-open"></span> {%trans 'FILES' %}</h3><hr>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <p>  
+                                {% for file in files %}
+                                    {{ file}} <br>
+                                {% endfor %}                                    
+                                    
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+	<hr><hr>
+    <h3 align="center">{%trans 'Report Generated' %} by - MobSF | http://opensecurity.in</h3>
+		   
+		   
+       
+      
+   {% endblock %}

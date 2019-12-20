@@ -1,0 +1,2796 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-27 15:25+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/general/about.html:12
+#, fuzzy
+#| msgid "Mobile Security Framework"
+msgid "About Mobile Security Framework"
+msgstr "关于移动安全框架"
+
+#: templates/general/about.html:15
+msgid ""
+"Mobile Security Framework (MobSF) is an intelligent, all-in-one open source "
+"mobile application (Android/iOS/Windows) automated pen-testing framework "
+"capable of performing static and dynamic analysis. It can be used for "
+"effective and fast security analysis of Android, iOS and Windows mobile "
+"Applications and supports both binaries (APK, IPA & APPX ) and zipped source "
+"code.<br/><br/> MobSF can also perform Web API Security testing with its API "
+"Fuzzer that can do Information Gathering, analyze Security Headers, identify "
+"Mobile API specific vulnerabilities like XXE, SSRF, Path Traversal, IDOR, "
+"and other logical issues related to Session and API Rate Limiting."
+msgstr ""
+
+#: templates/general/about.html:17
+msgid "Author"
+msgstr "作者"
+
+#: templates/general/about.html:17
+msgid "Ajin Abraham"
+msgstr ""
+
+#: templates/general/about.html:18
+msgid "Core Developers"
+msgstr "核心开发人员"
+
+#: templates/general/about.html:19
+msgid "Dominik Schlecht"
+msgstr ""
+
+#: templates/general/about.html:20
+msgid "Matan Dobrushin"
+msgstr ""
+
+#: templates/general/about.html:21
+msgid "Vincent Nadal"
+msgstr ""
+
+#: templates/general/apidocs.html:11
+#, fuzzy
+#| msgid "API Docs"
+msgid "REST API Docs"
+msgstr "API文档"
+
+#: templates/general/apidocs.html:22
+#, fuzzy
+#| msgid "Upload and Analyze"
+msgid "Upload a File"
+msgstr "上传一个文件"
+
+#: templates/general/apidocs.html:23
+msgid "Scan a File"
+msgstr "扫描一个文件"
+
+#: templates/general/apidocs.html:24 templates/general/apidocs.html:459
+#, fuzzy
+#| msgid "Recent Scans"
+msgid "Display Recent Scans"
+msgstr "显示最近的扫描"
+
+#: templates/general/apidocs.html:25
+#, fuzzy
+#| msgid "Recent Scans"
+msgid "Delete a Scan"
+msgstr "删除一个扫描"
+
+#: templates/general/apidocs.html:26
+msgid "Download PDF Report"
+msgstr "下载pdf报告"
+
+#: templates/general/apidocs.html:27
+msgid "Generate JSON Report"
+msgstr "生成JSON报告"
+
+#: templates/general/apidocs.html:28
+msgid "View Source Files"
+msgstr "查看源文件"
+
+#: templates/general/apidocs.html:30
+msgid "Upload File API"
+msgstr "上传文件的API"
+
+#: templates/general/apidocs.html:31
+msgid "API to upload a file. Supported file types are apk, zip, ipa and appx."
+msgstr "上传文件的API，支持的文件类型有apk、zip、ipa和appx"
+
+#: templates/general/apidocs.html:34 templates/general/apidocs.html:97
+#: templates/general/apidocs.html:184 templates/general/apidocs.html:247
+#: templates/general/apidocs.html:316 templates/general/apidocs.html:385
+#: templates/general/apidocs.html:463
+#: templates/pdf/android_binary_analysis.pdf.html:744
+#: templates/pdf/android_binary_analysis.pdf.html:818
+#: templates/static_analysis/android_binary_analysis.html:1072
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2236
+msgid "URL"
+msgstr "URL"
+
+#: templates/general/apidocs.html:37 templates/general/apidocs.html:100
+#: templates/general/apidocs.html:187 templates/general/apidocs.html:250
+#: templates/general/apidocs.html:319 templates/general/apidocs.html:388
+#: templates/general/apidocs.html:466
+msgid "Method"
+msgstr "方法"
+
+#: templates/general/apidocs.html:40 templates/general/apidocs.html:103
+#: templates/general/apidocs.html:190 templates/general/apidocs.html:253
+#: templates/general/apidocs.html:322 templates/general/apidocs.html:391
+#: templates/general/apidocs.html:469
+msgid "Header"
+msgstr "请求头"
+
+#: templates/general/apidocs.html:43 templates/general/apidocs.html:106
+#: templates/general/apidocs.html:193 templates/general/apidocs.html:256
+#: templates/general/apidocs.html:325 templates/general/apidocs.html:394
+#: templates/general/apidocs.html:472
+msgid "Data Params"
+msgstr "数据参数"
+
+#: templates/general/apidocs.html:49 templates/general/apidocs.html:112
+#: templates/general/apidocs.html:199 templates/general/apidocs.html:262
+#: templates/general/apidocs.html:331 templates/general/apidocs.html:400
+#: templates/general/apidocs.html:478
+msgid "Param Name"
+msgstr "参数名称"
+
+#: templates/general/apidocs.html:50 templates/general/apidocs.html:113
+#: templates/general/apidocs.html:200 templates/general/apidocs.html:263
+#: templates/general/apidocs.html:332 templates/general/apidocs.html:401
+#: templates/general/apidocs.html:479
+msgid "Param Value"
+msgstr "参数值"
+
+#: templates/general/apidocs.html:51 templates/general/apidocs.html:114
+#: templates/general/apidocs.html:201 templates/general/apidocs.html:264
+#: templates/general/apidocs.html:333 templates/general/apidocs.html:402
+#: templates/general/apidocs.html:480
+msgid "Required"
+msgstr "需求"
+
+#: templates/general/apidocs.html:56 templates/general/apidocs.html:412
+msgid "file"
+msgstr "文件"
+
+#: templates/general/apidocs.html:58 templates/general/apidocs.html:121
+#: templates/general/apidocs.html:126 templates/general/apidocs.html:131
+#: templates/general/apidocs.html:166 templates/general/apidocs.html:208
+#: templates/general/apidocs.html:271 templates/general/apidocs.html:276
+#: templates/general/apidocs.html:340 templates/general/apidocs.html:345
+#: templates/general/apidocs.html:368 templates/general/apidocs.html:374
+#: templates/general/apidocs.html:409 templates/general/apidocs.html:414
+#: templates/general/apidocs.html:419
+#: venv/lib/python3.7/site-packages/django/forms/widgets.py:712
+msgid "Yes"
+msgstr "同意"
+
+#: templates/general/apidocs.html:65
+msgid "Success Responss"
+msgstr "成功响应"
+
+#: templates/general/apidocs.html:67 templates/general/apidocs.html:75
+#: templates/general/apidocs.html:81 templates/general/apidocs.html:145
+#: templates/general/apidocs.html:162 templates/general/apidocs.html:168
+#: templates/general/apidocs.html:217 templates/general/apidocs.html:225
+#: templates/general/apidocs.html:231 templates/general/apidocs.html:285
+#: templates/general/apidocs.html:293 templates/general/apidocs.html:299
+#: templates/general/apidocs.html:354 templates/general/apidocs.html:362
+#: templates/general/apidocs.html:368 templates/general/apidocs.html:428
+#: templates/general/apidocs.html:436 templates/general/apidocs.html:442
+#: templates/general/apidocs.html:501 templates/general/apidocs.html:521
+#: templates/general/apidocs.html:527
+msgid "Code"
+msgstr "编码"
+
+#: templates/general/apidocs.html:68 templates/general/apidocs.html:76
+#: templates/general/apidocs.html:82 templates/general/apidocs.html:146
+#: templates/general/apidocs.html:163 templates/general/apidocs.html:169
+#: templates/general/apidocs.html:218 templates/general/apidocs.html:226
+#: templates/general/apidocs.html:232 templates/general/apidocs.html:286
+#: templates/general/apidocs.html:294 templates/general/apidocs.html:300
+#: templates/general/apidocs.html:355 templates/general/apidocs.html:363
+#: templates/general/apidocs.html:369 templates/general/apidocs.html:429
+#: templates/general/apidocs.html:437 templates/general/apidocs.html:443
+#: templates/general/apidocs.html:502 templates/general/apidocs.html:522
+#: templates/general/apidocs.html:528
+msgid "Content-Type"
+msgstr "内容类型"
+
+#: templates/general/apidocs.html:69 templates/general/apidocs.html:77
+#: templates/general/apidocs.html:83 templates/general/apidocs.html:147
+#: templates/general/apidocs.html:164 templates/general/apidocs.html:170
+#: templates/general/apidocs.html:219 templates/general/apidocs.html:227
+#: templates/general/apidocs.html:233 templates/general/apidocs.html:287
+#: templates/general/apidocs.html:295 templates/general/apidocs.html:301
+#: templates/general/apidocs.html:356 templates/general/apidocs.html:364
+#: templates/general/apidocs.html:370 templates/general/apidocs.html:430
+#: templates/general/apidocs.html:438 templates/general/apidocs.html:444
+#: templates/general/apidocs.html:503 templates/general/apidocs.html:523
+#: templates/general/apidocs.html:529
+msgid "Content"
+msgstr "内容"
+
+#: templates/general/apidocs.html:73 templates/general/apidocs.html:160
+#: templates/general/apidocs.html:223 templates/general/apidocs.html:291
+#: templates/general/apidocs.html:360 templates/general/apidocs.html:434
+#: templates/general/apidocs.html:519
+msgid "Error Response"
+msgstr "错误响应"
+
+#: templates/general/apidocs.html:79 templates/general/apidocs.html:297
+#: templates/general/apidocs.html:366 templates/general/apidocs.html:440
+#: templates/general/apidocs.html:525
+msgid "OR"
+msgstr "或者"
+
+#: templates/general/apidocs.html:87 templates/general/apidocs.html:174
+#: templates/general/apidocs.html:237 templates/general/apidocs.html:305
+#: templates/general/apidocs.html:448 templates/general/apidocs.html:533
+msgid "Sample Call"
+msgstr "简单的调用"
+
+#: templates/general/apidocs.html:93
+msgid "Scan File API"
+msgstr "扫描文件的API"
+
+#: templates/general/apidocs.html:94
+msgid "API to scan a file that is already uploaded."
+msgstr "用于扫描已上传文件的API"
+
+#: templates/general/apidocs.html:119 templates/general/apidocs.html:274
+#: templates/general/apidocs.html:343
+msgid "scan_type"
+msgstr "扫描类型"
+
+#: templates/general/apidocs.html:124
+msgid "file_name"
+msgstr "文件名"
+
+#: templates/general/apidocs.html:125
+msgid "Name of the app with extension"
+msgstr "带有扩展名的应用程序的名称"
+
+#: templates/general/apidocs.html:129 templates/general/apidocs.html:206
+#: templates/general/apidocs.html:269 templates/general/apidocs.html:338
+#: templates/general/apidocs.html:407
+msgid "hash"
+msgstr "散列"
+
+#: templates/general/apidocs.html:130 templates/general/apidocs.html:207
+#: templates/general/apidocs.html:270 templates/general/apidocs.html:339
+#: templates/general/apidocs.html:408
+msgid "hash of the scan"
+msgstr "扫描散列"
+
+#: templates/general/apidocs.html:134
+msgid "re_scan"
+msgstr "重新扫描"
+
+#: templates/general/apidocs.html:135
+msgid "0 or 1, default is 0"
+msgstr "0或1，默认为0"
+
+#: templates/general/apidocs.html:136
+#: venv/lib/python3.7/site-packages/django/forms/widgets.py:713
+msgid "No"
+msgstr "不同意"
+
+#: templates/general/apidocs.html:143 templates/general/apidocs.html:215
+#: templates/general/apidocs.html:283 templates/general/apidocs.html:352
+#: templates/general/apidocs.html:426 templates/general/apidocs.html:499
+msgid "Success Response"
+msgstr "成功响应"
+
+#: templates/general/apidocs.html:180
+#, fuzzy
+#| msgid "Recent Scans"
+msgid "Delete Scan API"
+msgstr "删除扫描的API"
+
+#: templates/general/apidocs.html:181
+msgid "API to delete scan results"
+msgstr "删除扫描结果的API"
+
+#: templates/general/apidocs.html:243
+msgid "Generate PDF Report API"
+msgstr "生成PDF报告的API"
+
+#: templates/general/apidocs.html:244
+msgid "API to generate PDF Report"
+msgstr "生成PDF报告的API"
+
+#: templates/general/apidocs.html:312
+msgid "Generate JSON Report API"
+msgstr "生成JSON报告API"
+
+#: templates/general/apidocs.html:313
+msgid "API to generate JSON Report"
+msgstr "生成JSON报告的API"
+
+#: templates/general/apidocs.html:370
+msgid "error&quot;: &quot;You are unauthorized to make this request.&quot;"
+msgstr "错误:您无权发出此请求"
+
+#: templates/general/apidocs.html:381
+msgid "View Source Files API"
+msgstr "查看源文件API"
+
+#: templates/general/apidocs.html:382
+msgid "API to view source files"
+msgstr "查看源文件的API"
+
+#: templates/general/apidocs.html:413
+msgid "relative file path"
+msgstr "相对文件路径"
+
+#: templates/general/apidocs.html:417
+msgid "type"
+msgstr "类型"
+
+#: templates/general/apidocs.html:460
+#, fuzzy
+#| msgid "Recent Scans"
+msgid "API to Display Recent Scans"
+msgstr "显示最近扫描的API"
+
+#: templates/general/apidocs.html:485
+msgid "page"
+msgstr "页"
+
+#: templates/general/apidocs.html:486
+msgid "the number of page"
+msgstr "页数"
+
+#: templates/general/apidocs.html:490
+msgid "page_size"
+msgstr "页面大小"
+
+#: templates/general/apidocs.html:491
+msgid "per page size"
+msgstr "每个页面大小"
+
+#: templates/general/index.html:11
+msgid "Mobile Security Framework"
+msgstr "移动安全框架"
+
+#: templates/general/index.html:113
+msgid "Upload and Analyze"
+msgstr "分析并上传"
+
+#: templates/general/index.html:129 templates/general/recent.html:21
+msgid "Recent Scans"
+msgstr "最近的扫描"
+
+#: templates/general/index.html:129
+#: templates/pdf/android_binary_analysis.pdf.html:10
+#: templates/static_analysis/android_binary_analysis.html:27
+msgid "Static Analysis"
+msgstr "静态分析"
+
+#: templates/general/index.html:129
+msgid "Dynamic Analysis"
+msgstr "动态分析"
+
+#: templates/general/index.html:129
+msgid "API Docs"
+msgstr "API文档"
+
+#: templates/general/index.html:129
+msgid "About"
+msgstr "关于我们"
+
+#: templates/general/index.html:130
+msgid "Mobile Security Framework - MobSF"
+msgstr "移动安全框架-Mobsf"
+
+#: templates/general/index.html:130
+msgid "All Rights Reserved"
+msgstr "所有权限保留"
+
+#: templates/general/not_found.html:11
+msgid "Scan Not Found"
+msgstr "没有找到扫描结果"
+
+#: templates/general/not_found.html:12
+msgid "We couldn not find a scan matching that MD5!"
+msgstr "我们找不到匹配MD5的扫描"
+
+#: templates/general/recent.html:30
+#: templates/pdf/android_binary_analysis.pdf.html:776
+#: templates/static_analysis/android_binary_analysis.html:1114
+#: templates/static_analysis/android_binary_analysis.html:1219
+#: venv/lib/python3.7/site-packages/django/db/models/fields/files.py:221
+msgid "File"
+msgstr "文件"
+
+#: templates/general/recent.html:31
+msgid "Type"
+msgstr "类型"
+
+#: templates/general/recent.html:32
+msgid "Hash"
+msgstr "散列"
+
+#: templates/general/recent.html:33
+msgid "Date"
+msgstr "日期"
+
+#: templates/general/recent.html:34
+#: templates/static_analysis/android_binary_analysis.html:306
+#: templates/static_analysis/android_binary_analysis.html:321
+#: templates/static_analysis/android_binary_analysis.html:336
+#: templates/static_analysis/android_binary_analysis.html:351
+msgid "View"
+msgstr "视图"
+
+#: templates/general/recent.html:35
+#: venv/lib/python3.7/site-packages/django/forms/formsets.py:375
+msgid "Delete"
+msgstr "删除"
+
+#: templates/general/recent.html:54
+msgid "Static Report"
+msgstr "静态报告"
+
+#: templates/general/recent.html:57
+msgid "Dynamic Report"
+msgstr "动态报告"
+
+#: templates/general/recent.html:58
+msgid "Diff or Compare"
+msgstr "比较两个文件"
+
+#: templates/general/search.html:9
+msgid "You have searched for"
+msgstr "你已经搜索了"
+
+#: templates/general/search.html:9
+msgid "Found in"
+msgstr "发现在"
+
+#: templates/general/search.html:9
+msgid "files"
+msgstr "文件"
+
+#: templates/general/view.html:22
+msgid "Table"
+msgstr "表"
+
+#: templates/pdf/android_binary_analysis.pdf.html:15
+msgid "APP SCORE"
+msgstr "应用分数"
+
+#: templates/pdf/android_binary_analysis.pdf.html:21
+msgid "Average CVSS Score"
+msgstr "平均CVSS分数"
+
+#: templates/pdf/android_binary_analysis.pdf.html:23
+msgid "App Security Score"
+msgstr "应用程序安全得分"
+
+#: templates/pdf/android_binary_analysis.pdf.html:27
+#: templates/static_analysis/android_binary_analysis.html:137
+#: templates/static_analysis/android_binary_analysis.html:140
+msgid "VirusTotal Detection"
+msgstr "VirusTotal检测"
+
+#: templates/pdf/android_binary_analysis.pdf.html:32
+#: templates/static_analysis/android_binary_analysis.html:145
+#: templates/static_analysis/android_binary_analysis.html:148
+msgid "Trackers Detection"
+msgstr "追踪器检测"
+
+#: templates/pdf/android_binary_analysis.pdf.html:49
+#: templates/pdf/android_binary_analysis.pdf.html:53
+#: templates/pdf/android_binary_analysis.pdf.html:80
+#: templates/pdf/android_binary_analysis.pdf.html:185
+#: templates/pdf/android_binary_analysis.pdf.html:187
+#: templates/pdf/android_binary_analysis.pdf.html:188
+#: templates/pdf/android_binary_analysis.pdf.html:548
+#: templates/static_analysis/android_binary_analysis.html:163
+#: templates/static_analysis/android_binary_analysis.html:197
+msgid "Name"
+msgstr "名称"
+
+#: templates/pdf/android_binary_analysis.pdf.html:75
+msgid "APP INFORMATION"
+msgstr "应用程序信息"
+
+#: templates/pdf/android_binary_analysis.pdf.html:84
+#: templates/static_analysis/android_binary_analysis.html:201
+msgid "Package Name"
+msgstr "包名"
+
+#: templates/pdf/android_binary_analysis.pdf.html:88
+#: templates/static_analysis/android_binary_analysis.html:205
+msgid "Main Activity"
+msgstr "主要活动"
+
+#: templates/pdf/android_binary_analysis.pdf.html:91
+#: templates/static_analysis/android_binary_analysis.html:209
+msgid "Target SDK"
+msgstr "目标运行设备版本"
+
+#: templates/pdf/android_binary_analysis.pdf.html:94
+#: templates/static_analysis/android_binary_analysis.html:211
+msgid "Min SDK"
+msgstr "运行该程序所需的最低版本"
+
+#: templates/pdf/android_binary_analysis.pdf.html:98
+#: templates/static_analysis/android_binary_analysis.html:213
+msgid "Max SDK"
+msgstr "运行该程序所需的最高版本"
+
+#: templates/pdf/android_binary_analysis.pdf.html:101
+#: templates/static_analysis/android_binary_analysis.html:217
+msgid "Android Version Name"
+msgstr "Android版本名称"
+
+#: templates/pdf/android_binary_analysis.pdf.html:104
+#: templates/static_analysis/android_binary_analysis.html:221
+msgid "Android Version Code"
+msgstr "Android版本代码"
+
+#: templates/pdf/android_binary_analysis.pdf.html:117
+msgid "PLAY STORE INFORMATION"
+msgstr "显示存储信息"
+
+#: templates/pdf/android_binary_analysis.pdf.html:124
+#: templates/static_analysis/android_binary_analysis.html:243
+msgid "Title"
+msgstr "标题"
+
+#: templates/pdf/android_binary_analysis.pdf.html:128
+#: templates/static_analysis/android_binary_analysis.html:247
+msgid "Score"
+msgstr "分数"
+
+#: templates/pdf/android_binary_analysis.pdf.html:131
+#: templates/static_analysis/android_binary_analysis.html:250
+msgid "Installs"
+msgstr "安装"
+
+#: templates/pdf/android_binary_analysis.pdf.html:134
+#: templates/static_analysis/android_binary_analysis.html:253
+msgid "Price"
+msgstr "价值"
+
+#: templates/pdf/android_binary_analysis.pdf.html:137
+#: templates/static_analysis/android_binary_analysis.html:256
+msgid "Android Version Support"
+msgstr "Android版本支持"
+
+#: templates/pdf/android_binary_analysis.pdf.html:140
+#: templates/static_analysis/android_binary_analysis.html:259
+msgid "Category"
+msgstr "种类"
+
+#: templates/pdf/android_binary_analysis.pdf.html:143
+#: templates/static_analysis/android_binary_analysis.html:262
+msgid "Play Store URL"
+msgstr ""
+
+#: templates/pdf/android_binary_analysis.pdf.html:148
+#: templates/static_analysis/android_binary_analysis.html:267
+msgid "Developer Details"
+msgstr "开发人员详细信息"
+
+#: templates/pdf/android_binary_analysis.pdf.html:156
+#: templates/static_analysis/android_binary_analysis.html:275
+msgid "Release Date"
+msgstr "发布日期"
+
+#: templates/pdf/android_binary_analysis.pdf.html:158
+#: templates/static_analysis/android_binary_analysis.html:277
+msgid "Privacy Policy"
+msgstr "隐私政策"
+
+#: templates/pdf/android_binary_analysis.pdf.html:159
+#: templates/static_analysis/android_binary_analysis.html:278
+msgid "Privacy link"
+msgstr "隐私的链接"
+
+#: templates/pdf/android_binary_analysis.pdf.html:162
+#: templates/pdf/android_binary_analysis.pdf.html:194
+#: templates/pdf/android_binary_analysis.pdf.html:198
+#: templates/pdf/android_binary_analysis.pdf.html:746
+#: templates/static_analysis/android_binary_analysis.html:281
+#: templates/static_analysis/android_binary_analysis.html:484
+#: templates/static_analysis/android_binary_analysis.html:489
+#: templates/static_analysis/android_binary_analysis.html:493
+#: templates/static_analysis/android_binary_analysis.html:1074
+msgid "Description"
+msgstr "描述"
+
+#: templates/pdf/android_binary_analysis.pdf.html:178
+msgid "CERTIFICATE"
+msgstr "证书"
+
+#: templates/pdf/android_binary_analysis.pdf.html:191
+#: templates/pdf/android_binary_analysis.pdf.html:193
+#: templates/pdf/android_binary_analysis.pdf.html:197
+#: templates/static_analysis/android_binary_analysis.html:486
+#: templates/static_analysis/android_binary_analysis.html:488
+#: templates/static_analysis/android_binary_analysis.html:492
+msgid "Certificate Status"
+msgstr "证书状态"
+
+#: templates/pdf/android_binary_analysis.pdf.html:191
+#: templates/static_analysis/android_binary_analysis.html:486
+msgid "Certificate not found"
+msgstr "证书未找到"
+
+#: templates/pdf/android_binary_analysis.pdf.html:193
+#: templates/static_analysis/android_binary_analysis.html:488
+msgid "Warning"
+msgstr "警告"
+
+#: templates/pdf/android_binary_analysis.pdf.html:194
+#: templates/pdf/android_binary_analysis.pdf.html:198
+#: templates/static_analysis/android_binary_analysis.html:493
+msgid ""
+"The app is signed with `SHA1withRSA`. SHA1 hash algorithm is known to have "
+"collision issues."
+msgstr "这款应用的签名是SHA1 with RSA’，已知SHA1哈希算法有碰撞问题"
+
+#: templates/pdf/android_binary_analysis.pdf.html:195
+#: templates/static_analysis/android_binary_analysis.html:490
+msgid "Note"
+msgstr "请注意"
+
+#: templates/pdf/android_binary_analysis.pdf.html:195
+msgid ""
+"The manifest indicates `SHA256withRSA` is in use. Be sure to manually "
+"confirm this issue."
+msgstr "“清单显示‘SHA256 with RSA’正在使用中，一定要手动确认这个问题"
+
+#: templates/pdf/android_binary_analysis.pdf.html:197
+#: templates/static_analysis/android_binary_analysis.html:492
+msgid "Bad"
+msgstr "坏的"
+
+#: templates/pdf/android_binary_analysis.pdf.html:208
+msgid "PERMISSIONS"
+msgstr "权限"
+
+#: templates/pdf/android_binary_analysis.pdf.html:215
+#: templates/static_analysis/android_binary_analysis.html:514
+msgid "PERMISSION"
+msgstr "权限"
+
+#: templates/pdf/android_binary_analysis.pdf.html:216
+#: templates/static_analysis/android_binary_analysis.html:515
+msgid "STATUS"
+msgstr "状态"
+
+#: templates/pdf/android_binary_analysis.pdf.html:217
+#: templates/static_analysis/android_binary_analysis.html:516
+msgid "INFO"
+msgstr "信息"
+
+#: templates/pdf/android_binary_analysis.pdf.html:218
+#: templates/pdf/android_binary_analysis.pdf.html:250
+#: templates/pdf/android_binary_analysis.pdf.html:506
+#: templates/static_analysis/android_binary_analysis.html:517
+#: templates/static_analysis/android_binary_analysis.html:570
+#: templates/static_analysis/android_binary_analysis.html:765
+msgid "DESCRIPTION"
+msgstr "描述"
+
+#: templates/pdf/android_binary_analysis.pdf.html:241
+msgid "ANDROID LIBRARY BINARY ANALYSIS"
+msgstr "Android库二进制分析"
+
+#: templates/pdf/android_binary_analysis.pdf.html:248
+#: templates/pdf/android_binary_analysis.pdf.html:504
+#: templates/pdf/android_binary_analysis.pdf.html:555
+#: templates/pdf/android_binary_analysis.pdf.html:855
+#: templates/static_analysis/android_binary_analysis.html:568
+#: templates/static_analysis/android_binary_analysis.html:763
+#: templates/static_analysis/android_binary_analysis.html:820
+#: templates/static_analysis/android_binary_analysis.html:885
+msgid "ISSUE"
+msgstr "问题"
+
+#: templates/pdf/android_binary_analysis.pdf.html:249
+#: templates/pdf/android_binary_analysis.pdf.html:505
+#: templates/pdf/android_binary_analysis.pdf.html:556
+#: templates/static_analysis/android_binary_analysis.html:569
+#: templates/static_analysis/android_binary_analysis.html:764
+#: templates/static_analysis/android_binary_analysis.html:821
+msgid "SEVERITY"
+msgstr "严重程度"
+
+#: templates/pdf/android_binary_analysis.pdf.html:251
+#: templates/pdf/android_binary_analysis.pdf.html:560
+#: templates/pdf/android_binary_analysis.pdf.html:611
+#: templates/pdf/android_binary_analysis.pdf.html:856
+#: templates/pdf/android_binary_analysis.pdf.html:983
+#: templates/static_analysis/android_binary_analysis.html:571
+#: templates/static_analysis/android_binary_analysis.html:639
+#: templates/static_analysis/android_binary_analysis.html:825
+#: templates/static_analysis/android_binary_analysis.html:886
+msgid "FILES"
+msgstr "文件"
+
+#: templates/pdf/android_binary_analysis.pdf.html:263
+#: templates/pdf/android_binary_analysis.pdf.html:519
+#: templates/pdf/android_binary_analysis.pdf.html:571
+#: templates/static_analysis/android_binary_analysis.html:583
+#: templates/static_analysis/android_binary_analysis.html:779
+#: templates/static_analysis/android_binary_analysis.html:837
+msgid "high"
+msgstr "高的"
+
+#: templates/pdf/android_binary_analysis.pdf.html:265
+#: templates/pdf/android_binary_analysis.pdf.html:286
+#: templates/pdf/android_binary_analysis.pdf.html:521
+#: templates/pdf/android_binary_analysis.pdf.html:577
+#: templates/static_analysis/android_binary_analysis.html:585
+#: templates/static_analysis/android_binary_analysis.html:606
+#: templates/static_analysis/android_binary_analysis.html:781
+#: templates/static_analysis/android_binary_analysis.html:843
+msgid "info"
+msgstr "信息"
+
+#: templates/pdf/android_binary_analysis.pdf.html:267
+#: templates/pdf/android_binary_analysis.pdf.html:523
+#: templates/static_analysis/android_binary_analysis.html:587
+#: templates/static_analysis/android_binary_analysis.html:783
+msgid "medium"
+msgstr "媒介"
+
+#: templates/pdf/android_binary_analysis.pdf.html:283
+#: templates/static_analysis/android_binary_analysis.html:603
+msgid "No issue found"
+msgstr "没有发现问题"
+
+#: templates/pdf/android_binary_analysis.pdf.html:304
+#: templates/static_analysis/android_binary_analysis.html:998
+msgid "VirusTotal Report"
+msgstr "VirusTotal报告"
+
+#: templates/pdf/android_binary_analysis.pdf.html:307
+#: templates/static_analysis/android_binary_analysis.html:1006
+msgid "AVs found this file Malicious!"
+msgstr "AVs发现这个文件是恶意的"
+
+#: templates/pdf/android_binary_analysis.pdf.html:313
+#: templates/static_analysis/android_binary_analysis.html:1011
+msgid "AV"
+msgstr ""
+
+#: templates/pdf/android_binary_analysis.pdf.html:314
+#: templates/static_analysis/android_binary_analysis.html:1012
+msgid "Detection"
+msgstr "检测"
+
+#: templates/pdf/android_binary_analysis.pdf.html:344
+msgid "APKiD ANALYSIS"
+msgstr "Apk ID分析”"
+
+#: templates/pdf/android_binary_analysis.pdf.html:351
+#: templates/static_analysis/android_binary_analysis.html:920
+msgid "FILE"
+msgstr "文件"
+
+#: templates/pdf/android_binary_analysis.pdf.html:365
+#: templates/static_analysis/android_binary_analysis.html:934
+msgid "FINDINGS"
+msgstr "发现"
+
+#: templates/pdf/android_binary_analysis.pdf.html:366
+#: templates/static_analysis/android_binary_analysis.html:935
+msgid "DETAILS"
+msgstr "细节"
+
+#: templates/pdf/android_binary_analysis.pdf.html:374
+#: templates/static_analysis/android_binary_analysis.html:943
+msgid "Anti-VM Code"
+msgstr "Anti-VM代码"
+
+#: templates/pdf/android_binary_analysis.pdf.html:376
+#: templates/static_analysis/android_binary_analysis.html:945
+msgid "Anti Disassembly Code"
+msgstr "Anti Disassembly代码"
+
+#: templates/pdf/android_binary_analysis.pdf.html:378
+#: templates/static_analysis/android_binary_analysis.html:947
+msgid "Anti Debug Code"
+msgstr "Anti Debug代码"
+
+#: templates/pdf/android_binary_analysis.pdf.html:380
+#: templates/static_analysis/android_binary_analysis.html:949
+msgid "Compiler"
+msgstr "编译器"
+
+#: templates/pdf/android_binary_analysis.pdf.html:382
+#: templates/static_analysis/android_binary_analysis.html:951
+msgid "Abnormal Code"
+msgstr "异常代码"
+
+#: templates/pdf/android_binary_analysis.pdf.html:384
+#: templates/static_analysis/android_binary_analysis.html:953
+msgid "Obfuscator"
+msgstr "模糊处理"
+
+#: templates/pdf/android_binary_analysis.pdf.html:386
+#: templates/static_analysis/android_binary_analysis.html:955
+msgid "Protector"
+msgstr "保护器"
+
+#: templates/pdf/android_binary_analysis.pdf.html:388
+#: templates/static_analysis/android_binary_analysis.html:957
+msgid "Packer Found"
+msgstr ""
+
+#: templates/pdf/android_binary_analysis.pdf.html:390
+#: templates/static_analysis/android_binary_analysis.html:959
+msgid "Dropper Found"
+msgstr ""
+
+#: templates/pdf/android_binary_analysis.pdf.html:392
+#: templates/static_analysis/android_binary_analysis.html:961
+msgid "Manipulator Found"
+msgstr ""
+
+#: templates/pdf/android_binary_analysis.pdf.html:407
+#: templates/static_analysis/android_binary_analysis.html:976
+msgid "APKiD not enabled"
+msgstr "Apk ID未启用"
+
+#: templates/pdf/android_binary_analysis.pdf.html:422
+msgid "BROWSABLE ACTIVITIES"
+msgstr "可浏览的活动"
+
+#: templates/pdf/android_binary_analysis.pdf.html:430
+#: templates/static_analysis/android_binary_analysis.html:683
+msgid "ACTIVITY"
+msgstr "活动"
+
+#: templates/pdf/android_binary_analysis.pdf.html:431
+#: templates/static_analysis/android_binary_analysis.html:684
+msgid "INTENT"
+msgstr "意图"
+
+#: templates/pdf/android_binary_analysis.pdf.html:440
+#: templates/static_analysis/android_binary_analysis.html:693
+msgid "Schemes"
+msgstr "方案"
+
+#: templates/pdf/android_binary_analysis.pdf.html:447
+#: templates/static_analysis/android_binary_analysis.html:700
+msgid "Hosts"
+msgstr "主机"
+
+#: templates/pdf/android_binary_analysis.pdf.html:453
+#: templates/static_analysis/android_binary_analysis.html:706
+msgid "Ports"
+msgstr "端口"
+
+#: templates/pdf/android_binary_analysis.pdf.html:459
+#: templates/static_analysis/android_binary_analysis.html:712
+msgid "Mime Types"
+msgstr "Mime类型"
+
+#: templates/pdf/android_binary_analysis.pdf.html:465
+#: templates/static_analysis/android_binary_analysis.html:718
+msgid "Paths"
+msgstr "路径"
+
+#: templates/pdf/android_binary_analysis.pdf.html:471
+#: templates/static_analysis/android_binary_analysis.html:724
+msgid "Path Prefixes"
+msgstr "路径前缀"
+
+#: templates/pdf/android_binary_analysis.pdf.html:477
+#: templates/static_analysis/android_binary_analysis.html:730
+msgid "Path Patterns"
+msgstr "路径模式"
+
+#: templates/pdf/android_binary_analysis.pdf.html:496
+msgid "MANIFEST ANALYSIS"
+msgstr "清单分析"
+
+#: templates/pdf/android_binary_analysis.pdf.html:557
+#: templates/static_analysis/android_binary_analysis.html:822
+msgid "CVSS"
+msgstr ""
+
+#: templates/pdf/android_binary_analysis.pdf.html:558
+#: templates/static_analysis/android_binary_analysis.html:823
+msgid "CWE"
+msgstr ""
+
+#: templates/pdf/android_binary_analysis.pdf.html:559
+#: templates/static_analysis/android_binary_analysis.html:824
+msgid "OWASP"
+msgstr ""
+
+#: templates/pdf/android_binary_analysis.pdf.html:573
+#: templates/static_analysis/android_binary_analysis.html:839
+msgid "secure"
+msgstr "安全"
+
+#: templates/pdf/android_binary_analysis.pdf.html:575
+#: templates/static_analysis/android_binary_analysis.html:841
+msgid "warning"
+msgstr "警告"
+
+#: templates/pdf/android_binary_analysis.pdf.html:602
+msgid "ANDROID API"
+msgstr ""
+
+#: templates/pdf/android_binary_analysis.pdf.html:680
+msgid "FIREBASE DATABASES"
+msgstr ""
+
+#: templates/pdf/android_binary_analysis.pdf.html:689
+#: templates/static_analysis/android_binary_analysis.html:1165
+msgid "Database URL"
+msgstr ""
+
+#: templates/pdf/android_binary_analysis.pdf.html:704
+msgid "insecure"
+msgstr ""
+
+#: templates/pdf/android_binary_analysis.pdf.html:704
+msgid "Firebase DB is exposed publically"
+msgstr "Firebase DB被暴露公开"
+
+#: templates/pdf/android_binary_analysis.pdf.html:706
+msgid "Info"
+msgstr "信息"
+
+#: templates/pdf/android_binary_analysis.pdf.html:706
+msgid "App talks to a Firebase Database"
+msgstr "app与Firebase Database的连接"
+
+#: templates/pdf/android_binary_analysis.pdf.html:723
+msgid "MALWARE CHECK"
+msgstr "恶意软件检查"
+
+#: templates/pdf/android_binary_analysis.pdf.html:731
+#: templates/static_analysis/android_binary_analysis.html:1059
+msgid "Domain"
+msgstr "域名"
+
+#: templates/pdf/android_binary_analysis.pdf.html:732
+#: templates/static_analysis/android_binary_analysis.html:1060
+msgid "Status"
+msgstr "状态"
+
+#: templates/pdf/android_binary_analysis.pdf.html:742
+#: templates/static_analysis/android_binary_analysis.html:1070
+msgid "malware"
+msgstr "恶意软件"
+
+#: templates/pdf/android_binary_analysis.pdf.html:745
+#: templates/static_analysis/android_binary_analysis.html:1073
+msgid "IP"
+msgstr ""
+
+#: templates/pdf/android_binary_analysis.pdf.html:749
+msgid "good"
+msgstr "好的"
+
+#: templates/pdf/android_binary_analysis.pdf.html:767
+msgid "EMAILS"
+msgstr ""
+
+#: templates/pdf/android_binary_analysis.pdf.html:775
+#: templates/static_analysis/android_binary_analysis.html:1218
+msgid "Email"
+msgstr ""
+
+#: templates/pdf/android_binary_analysis.pdf.html:808
+msgid "TRACKERS"
+msgstr "追踪器"
+
+#: templates/pdf/android_binary_analysis.pdf.html:817
+msgid "Tracker Name"
+msgstr "追踪器名称"
+
+#: templates/pdf/android_binary_analysis.pdf.html:847
+msgid "FILE ANALYSIS"
+msgstr "文件分析"
+
+#: templates/pdf/android_binary_analysis.pdf.html:871
+msgid "STRINGS"
+msgstr "字符串"
+
+#: templates/pdf/android_binary_analysis.pdf.html:894
+#: templates/static_analysis/android_binary_analysis.html:301
+msgid "ACTIVITIES"
+msgstr "活动"
+
+#: templates/pdf/android_binary_analysis.pdf.html:912
+#: templates/static_analysis/android_binary_analysis.html:346
+msgid "PROVIDERS"
+msgstr "供应商"
+
+#: templates/pdf/android_binary_analysis.pdf.html:930
+#: templates/static_analysis/android_binary_analysis.html:331
+msgid "RECEIVERS"
+msgstr "接收器"
+
+#: templates/pdf/android_binary_analysis.pdf.html:948
+#: templates/static_analysis/android_binary_analysis.html:316
+msgid "SERVICES"
+msgstr "服务"
+
+#: templates/pdf/android_binary_analysis.pdf.html:966
+msgid "LIBRARIES"
+msgstr "库"
+
+#: templates/pdf/android_binary_analysis.pdf.html:1000
+msgid "Report Generated"
+msgstr "报告生成"
+
+#: templates/static_analysis/android_binary_analysis.html:28
+#: templates/static_analysis/android_binary_analysis.html:1181
+#: templates/static_analysis/android_binary_analysis.html:1183
+msgid "Information"
+msgstr "信息"
+
+#: templates/static_analysis/android_binary_analysis.html:29
+#: templates/static_analysis/android_binary_analysis.html:431
+msgid "Scan Options"
+msgstr "扫描选项"
+
+#: templates/static_analysis/android_binary_analysis.html:30
+#: templates/static_analysis/android_binary_analysis.html:476
+msgid "Signer Certificate"
+msgstr "签名者证书"
+
+#: templates/static_analysis/android_binary_analysis.html:31
+msgid "Permissions"
+msgstr "权限"
+
+#: templates/static_analysis/android_binary_analysis.html:32
+#, fuzzy
+#| msgid "Dynamic Analysis"
+msgid "Binary Analysis"
+msgstr "二进制分析"
+
+#: templates/static_analysis/android_binary_analysis.html:34
+#: templates/static_analysis/android_binary_analysis.html:630
+msgid "Android API"
+msgstr ""
+
+#: templates/static_analysis/android_binary_analysis.html:35
+#: templates/static_analysis/android_binary_analysis.html:675
+msgid "Browsable Activities"
+msgstr "可浏览的活动"
+
+#: templates/static_analysis/android_binary_analysis.html:38
+#, fuzzy
+#| msgid "Static Analysis"
+msgid "Security Analysis"
+msgstr "安全分析"
+
+#: templates/static_analysis/android_binary_analysis.html:40
+#: templates/static_analysis/android_binary_analysis.html:755
+#, fuzzy
+#| msgid "Static Analysis"
+msgid "Manifest Analysis"
+msgstr "清单分析"
+
+#: templates/static_analysis/android_binary_analysis.html:42
+#: templates/static_analysis/android_binary_analysis.html:812
+#, fuzzy
+#| msgid "Static Analysis"
+msgid "Code Analysis"
+msgstr "代码分析"
+
+#: templates/static_analysis/android_binary_analysis.html:43
+#: templates/static_analysis/android_binary_analysis.html:877
+#, fuzzy
+#| msgid "Static Analysis"
+msgid "File Analysis"
+msgstr "文件分析"
+
+#: templates/static_analysis/android_binary_analysis.html:48
+#, fuzzy
+#| msgid "Static Analysis"
+msgid "Malware Analysis"
+msgstr "恶意软件分析"
+
+#: templates/static_analysis/android_binary_analysis.html:50
+#: templates/static_analysis/android_binary_analysis.html:913
+#, fuzzy
+#| msgid "Static Analysis"
+msgid "APKiD Analysis"
+msgstr "Apk ID静态分析"
+
+#: templates/static_analysis/android_binary_analysis.html:52
+msgid "Virus Total"
+msgstr "病毒汇总"
+
+#: templates/static_analysis/android_binary_analysis.html:54
+msgid "Domain Malware Check"
+msgstr "恶意软件域"
+
+#: templates/static_analysis/android_binary_analysis.html:59
+msgid "Reconnaissance"
+msgstr "侦察"
+
+#: templates/static_analysis/android_binary_analysis.html:61
+msgid "URLs"
+msgstr ""
+
+#: templates/static_analysis/android_binary_analysis.html:62
+msgid "Firebase DB"
+msgstr ""
+
+#: templates/static_analysis/android_binary_analysis.html:63
+#: templates/static_analysis/android_binary_analysis.html:1209
+msgid "Emails"
+msgstr "邮件"
+
+#: templates/static_analysis/android_binary_analysis.html:64
+#: templates/static_analysis/android_binary_analysis.html:1258
+msgid "Trackers"
+msgstr "追踪器"
+
+#: templates/static_analysis/android_binary_analysis.html:65
+#: templates/static_analysis/android_binary_analysis.html:1304
+msgid "Strings"
+msgstr "字符串"
+
+#: templates/static_analysis/android_binary_analysis.html:70
+msgid "Components"
+msgstr "组件"
+
+#: templates/static_analysis/android_binary_analysis.html:72
+#: templates/static_analysis/android_binary_analysis.html:366
+#: templates/static_analysis/android_binary_analysis.html:1333
+msgid "Activities"
+msgstr "活动"
+
+#: templates/static_analysis/android_binary_analysis.html:73
+#: templates/static_analysis/android_binary_analysis.html:379
+#: templates/static_analysis/android_binary_analysis.html:1360
+msgid "Services"
+msgstr "服务"
+
+#: templates/static_analysis/android_binary_analysis.html:74
+#: templates/static_analysis/android_binary_analysis.html:396
+msgid "Receivers"
+msgstr "接收器"
+
+#: templates/static_analysis/android_binary_analysis.html:75
+#: templates/static_analysis/android_binary_analysis.html:409
+msgid "Providers"
+msgstr "供应商"
+
+#: templates/static_analysis/android_binary_analysis.html:76
+#: templates/static_analysis/android_binary_analysis.html:1439
+msgid "Libraries"
+msgstr "库"
+
+#: templates/static_analysis/android_binary_analysis.html:77
+#: templates/static_analysis/android_binary_analysis.html:1463
+msgid "Files"
+msgstr "文件"
+
+#: templates/static_analysis/android_binary_analysis.html:80
+msgid " PDF Report"
+msgstr ""
+
+#: templates/static_analysis/android_binary_analysis.html:81
+msgid " Print Report"
+msgstr "打印报告"
+
+#: templates/static_analysis/android_binary_analysis.html:83
+#, fuzzy
+#| msgid "Dynamic Analysis"
+msgid " Dynamic Analysis Report"
+msgstr "动态分析"
+
+#: templates/static_analysis/android_binary_analysis.html:85
+#: templates/static_analysis/android_binary_analysis.html:438
+#, fuzzy
+#| msgid "Dynamic Analysis"
+msgid "Start Dynamic Analysis"
+msgstr "动态分析"
+
+#: templates/static_analysis/android_binary_analysis.html:92
+#, fuzzy
+#| msgid "Static Analysis"
+msgid "MobSF Static Analysis Report"
+msgstr "静态分析报告"
+
+#: templates/static_analysis/android_binary_analysis.html:107
+msgid "App Icon"
+msgstr "应用程序图标"
+
+#: templates/static_analysis/android_binary_analysis.html:120
+msgid "Hidden Icon"
+msgstr "隐藏图标"
+
+#: templates/static_analysis/android_binary_analysis.html:127
+msgid "App Score"
+msgstr "应用分数"
+
+#: templates/static_analysis/android_binary_analysis.html:132
+msgid "Average CVSS"
+msgstr "平均CVSS分"
+
+#: templates/static_analysis/android_binary_analysis.html:133
+msgid "Security Score"
+msgstr "安全得分"
+
+#: templates/static_analysis/android_binary_analysis.html:157
+msgid "File Information"
+msgstr "文件信息"
+
+#: templates/static_analysis/android_binary_analysis.html:167
+msgid "Size"
+msgstr "大小"
+
+#: templates/static_analysis/android_binary_analysis.html:171
+msgid "MD5"
+msgstr ""
+
+#: templates/static_analysis/android_binary_analysis.html:175
+msgid "SHA1"
+msgstr ""
+
+#: templates/static_analysis/android_binary_analysis.html:179
+msgid "SHA256"
+msgstr ""
+
+#: templates/static_analysis/android_binary_analysis.html:191
+msgid "App Information"
+msgstr "应用信息"
+
+#: templates/static_analysis/android_binary_analysis.html:224
+msgid "intellectual analysis"
+msgstr "智能分析"
+
+#: templates/static_analysis/android_binary_analysis.html:236
+msgid "Play Store Information"
+msgstr "播放存储信息"
+
+#: templates/static_analysis/android_binary_analysis.html:366
+#: templates/static_analysis/android_binary_analysis.html:379
+#: templates/static_analysis/android_binary_analysis.html:396
+#: templates/static_analysis/android_binary_analysis.html:409
+msgid "Exported"
+msgstr "出口"
+
+#: templates/static_analysis/android_binary_analysis.html:436
+msgid "Rescan"
+msgstr "重新扫描"
+
+#: templates/static_analysis/android_binary_analysis.html:447
+msgid "View Code"
+msgstr "查看代码"
+
+#: templates/static_analysis/android_binary_analysis.html:451
+msgid "View Java"
+msgstr "查看java"
+
+#: templates/static_analysis/android_binary_analysis.html:452
+msgid " Download Java Code"
+msgstr "下载java代码"
+
+#: templates/static_analysis/android_binary_analysis.html:454
+msgid "View Smali"
+msgstr "查看smali"
+
+#: templates/static_analysis/android_binary_analysis.html:455
+msgid "Download Smali Code"
+msgstr "下载smali代码"
+
+#: templates/static_analysis/android_binary_analysis.html:458
+msgid "View AndroidManifest.xml"
+msgstr "查看 AndroidManifest.xml"
+
+#: templates/static_analysis/android_binary_analysis.html:484
+msgid ""
+"App Signed by \"Android Debug\" Certificate.Production ready applications "
+"should not be signed with \"Android Debug\" Certificate."
+msgstr "App由Android Debug证书签署。准备生产的应用程序不应该用Android Debug 证书进行签名。"
+
+#: templates/static_analysis/android_binary_analysis.html:489
+msgid ""
+"The app is signed with `SHA1withRSA`. SHA1 hash algorithm is known to have "
+"collision issues"
+msgstr "“这款应用的签名是‘SHA1 with RSA’。已知SHA1哈希算法有碰撞问题"
+
+#: templates/static_analysis/android_binary_analysis.html:490
+msgid ""
+"The manifest indicates `SHA256withRSA` is in use. Be sure to manually "
+"confirm this issue"
+msgstr "“清单显示‘SHA256 with RSA’正在使用中。一定要手动确认这个问题"
+
+#: templates/static_analysis/android_binary_analysis.html:507
+msgid "Android Permissions"
+msgstr "安卓权限"
+
+#: templates/static_analysis/android_binary_analysis.html:527
+msgid "dangerous"
+msgstr "危险的"
+
+#: templates/static_analysis/android_binary_analysis.html:529
+msgid "normal"
+msgstr "正常的"
+
+#: templates/static_analysis/android_binary_analysis.html:531
+msgid "SignatureOrSystem"
+msgstr ""
+
+#: templates/static_analysis/android_binary_analysis.html:533
+msgid "signature"
+msgstr "签名"
+
+#: templates/static_analysis/android_binary_analysis.html:561
+msgid "Android Library Binary Analysis"
+msgstr "Android库二进制分析"
+
+#: templates/static_analysis/android_binary_analysis.html:638
+msgid "API"
+msgstr ""
+
+#: templates/static_analysis/android_binary_analysis.html:1006
+msgid "Full Report"
+msgstr "完整的报告"
+
+#: templates/static_analysis/android_binary_analysis.html:1050
+msgid "Malware Check"
+msgstr "恶意软件检查"
+
+#: templates/static_analysis/android_binary_analysis.html:1156
+msgid "Firebase Databases"
+msgstr ""
+
+#: templates/static_analysis/android_binary_analysis.html:1166
+msgid "Details"
+msgstr "细节"
+
+#: templates/static_analysis/android_binary_analysis.html:1181
+msgid "Firebase DB is exposed publically."
+msgstr "Firebase数据库被公开曝光"
+
+#: templates/static_analysis/android_binary_analysis.html:1183
+msgid "App talks to a Firebase Database."
+msgstr "App与Firebase数据库的连接"
+
+#: templates/static_analysis/android_binary_analysis.html:1386
+msgid "Broadcast Receivers"
+msgstr "广播接收器"
+
+#: templates/static_analysis/android_binary_analysis.html:1413
+msgid "Content Providers"
+msgstr "内容提供商"
+
+#: venv/lib/python3.7/site-packages/django/contrib/messages/apps.py:7
+msgid "Messages"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/contrib/sitemaps/apps.py:7
+msgid "Site Maps"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/contrib/staticfiles/apps.py:9
+msgid "Static Files"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/contrib/syndication/apps.py:7
+msgid "Syndication"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/core/paginator.py:45
+msgid "That page number is not an integer"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/core/paginator.py:47
+msgid "That page number is less than 1"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/core/paginator.py:52
+msgid "That page contains no results"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/core/validators.py:31
+msgid "Enter a valid value."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/core/validators.py:102
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:658
+msgid "Enter a valid URL."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/core/validators.py:154
+msgid "Enter a valid integer."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/core/validators.py:165
+msgid "Enter a valid email address."
+msgstr ""
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: venv/lib/python3.7/site-packages/django/core/validators.py:239
+msgid ""
+"Enter a valid 'slug' consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/core/validators.py:246
+msgid ""
+"Enter a valid 'slug' consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/core/validators.py:255
+#: venv/lib/python3.7/site-packages/django/core/validators.py:275
+msgid "Enter a valid IPv4 address."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/core/validators.py:260
+#: venv/lib/python3.7/site-packages/django/core/validators.py:276
+msgid "Enter a valid IPv6 address."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/core/validators.py:270
+#: venv/lib/python3.7/site-packages/django/core/validators.py:274
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/core/validators.py:304
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/core/validators.py:310
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/core/validators.py:342
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/core/validators.py:351
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/core/validators.py:361
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.7/site-packages/django/core/validators.py:376
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.7/site-packages/django/core/validators.py:395
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:290
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:325
+msgid "Enter a number."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/core/validators.py:397
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.7/site-packages/django/core/validators.py:402
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.7/site-packages/django/core/validators.py:407
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.7/site-packages/django/core/validators.py:469
+#, python-format
+msgid ""
+"File extension '%(extension)s' is not allowed. Allowed extensions are: "
+"'%(allowed_extensions)s'."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/core/validators.py:521
+msgid "Null characters are not allowed."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/base.py:1162
+#: venv/lib/python3.7/site-packages/django/forms/models.py:756
+msgid "and"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/base.py:1164
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:104
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:105
+msgid "This field cannot be null."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:106
+msgid "This field cannot be blank."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:107
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or 'month'.
+#. Eg: "Title must be unique for pub_date year"
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:111
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:128
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:901
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1768
+msgid "Integer"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:905
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1766
+#, python-format
+msgid "'%(value)s' value must be an integer."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:980
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1846
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:992
+#, python-format
+msgid "'%(value)s' value must be either True or False."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:993
+#, python-format
+msgid "'%(value)s' value must be either True, False, or None."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:995
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1036
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1100
+msgid "Comma-separated integers"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1149
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1151
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1294
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1154
+msgid "Date (without time)"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1292
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1296
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1300
+msgid "Date (with time)"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1448
+#, python-format
+msgid "'%(value)s' value must be a decimal number."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1450
+msgid "Decimal number"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1589
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in [DD] [HH:[MM:]]ss[."
+"uuuuuu] format."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1592
+msgid "Duration"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1642
+msgid "Email address"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1665
+msgid "File path"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1731
+#, python-format
+msgid "'%(value)s' value must be a float."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1733
+msgid "Floating point number"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1862
+msgid "IPv4 address"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1893
+msgid "IP address"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1973
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1974
+#, python-format
+msgid "'%(value)s' value must be either None, True or False."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1976
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2011
+msgid "Positive integer"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2024
+msgid "Positive small integer"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2038
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2070
+msgid "Small integer"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2077
+msgid "Text"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2105
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2107
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2110
+msgid "Time"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2258
+msgid "Raw binary data"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2308
+#, python-format
+msgid "'%(value)s' is not a valid UUID."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2310
+msgid "Universally unique identifier"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/files.py:360
+msgid "Image"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/related.py:778
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/related.py:780
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/related.py:1007
+msgid "One-to-one relationship"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/related.py:1057
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/related.py:1058
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/db/models/fields/related.py:1100
+msgid "Many-to-many relationship"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: venv/lib/python3.7/site-packages/django/forms/boundfield.py:146
+msgid ":?.!"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:53
+msgid "This field is required."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:245
+msgid "Enter a whole number."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:396
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:1126
+msgid "Enter a valid date."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:420
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:1127
+msgid "Enter a valid time."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:442
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:471
+msgid "Enter a valid duration."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:472
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:532
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:533
+msgid "No file was submitted."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:534
+msgid "The submitted file is empty."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:536
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:539
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:600
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:762
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:852
+#: venv/lib/python3.7/site-packages/django/forms/models.py:1270
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:853
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:968
+#: venv/lib/python3.7/site-packages/django/forms/models.py:1269
+msgid "Enter a list of values."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:969
+msgid "Enter a complete value."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/fields.py:1185
+msgid "Enter a valid UUID."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: venv/lib/python3.7/site-packages/django/forms/forms.py:86
+msgid ":"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/forms.py:212
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/formsets.py:91
+msgid "ManagementForm data is missing or has been tampered with"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/formsets.py:338
+#, python-format
+msgid "Please submit %d or fewer forms."
+msgid_plural "Please submit %d or fewer forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.7/site-packages/django/forms/formsets.py:345
+#, python-format
+msgid "Please submit %d or more forms."
+msgid_plural "Please submit %d or more forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.7/site-packages/django/forms/formsets.py:371
+#: venv/lib/python3.7/site-packages/django/forms/formsets.py:373
+msgid "Order"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/models.py:751
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/models.py:755
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/models.py:761
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/models.py:770
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/models.py:1091
+msgid "The inline value did not match the parent instance."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/models.py:1158
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/models.py:1272
+#, python-format
+msgid "\"%(pk)s\" is not a valid value."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/utils.py:162
+#, python-format
+msgid ""
+"%(datetime)s couldn't be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/widgets.py:395
+msgid "Clear"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/widgets.py:396
+msgid "Currently"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/widgets.py:397
+msgid "Change"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/forms/widgets.py:711
+msgid "Unknown"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/template/defaultfilters.py:788
+msgid "yes,no,maybe"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/template/defaultfilters.py:817
+#: venv/lib/python3.7/site-packages/django/template/defaultfilters.py:834
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.7/site-packages/django/template/defaultfilters.py:836
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/template/defaultfilters.py:838
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/template/defaultfilters.py:840
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/template/defaultfilters.py:842
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/template/defaultfilters.py:844
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dateformat.py:62
+msgid "p.m."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dateformat.py:63
+msgid "a.m."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dateformat.py:68
+msgid "PM"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dateformat.py:69
+msgid "AM"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dateformat.py:150
+msgid "midnight"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dateformat.py:152
+msgid "noon"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:6
+#: venv/lib/python3.7/site-packages/tornado/locale.py:292
+msgid "Monday"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:6
+#: venv/lib/python3.7/site-packages/tornado/locale.py:292
+msgid "Tuesday"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:6
+#: venv/lib/python3.7/site-packages/tornado/locale.py:292
+msgid "Wednesday"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:6
+#: venv/lib/python3.7/site-packages/tornado/locale.py:292
+msgid "Thursday"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:6
+#: venv/lib/python3.7/site-packages/tornado/locale.py:293
+msgid "Friday"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:7
+#: venv/lib/python3.7/site-packages/tornado/locale.py:293
+msgid "Saturday"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:7
+#: venv/lib/python3.7/site-packages/tornado/locale.py:293
+msgid "Sunday"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:10
+msgid "Mon"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:10
+msgid "Tue"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:10
+msgid "Wed"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:10
+msgid "Thu"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:10
+msgid "Fri"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:11
+msgid "Sat"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:11
+msgid "Sun"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:14
+#: venv/lib/python3.7/site-packages/tornado/locale.py:288
+msgid "January"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:14
+#: venv/lib/python3.7/site-packages/tornado/locale.py:288
+msgid "February"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:14
+#: venv/lib/python3.7/site-packages/tornado/locale.py:288
+msgid "March"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:14
+#: venv/lib/python3.7/site-packages/tornado/locale.py:288
+msgid "April"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:14
+#: venv/lib/python3.7/site-packages/tornado/locale.py:289
+msgid "May"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:14
+#: venv/lib/python3.7/site-packages/tornado/locale.py:289
+msgid "June"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:15
+#: venv/lib/python3.7/site-packages/tornado/locale.py:289
+msgid "July"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:15
+#: venv/lib/python3.7/site-packages/tornado/locale.py:289
+msgid "August"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:15
+#: venv/lib/python3.7/site-packages/tornado/locale.py:290
+msgid "September"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:15
+#: venv/lib/python3.7/site-packages/tornado/locale.py:290
+msgid "October"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:15
+#: venv/lib/python3.7/site-packages/tornado/locale.py:290
+msgid "November"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:16
+#: venv/lib/python3.7/site-packages/tornado/locale.py:290
+msgid "December"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:19
+msgid "jan"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:19
+msgid "feb"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:19
+msgid "mar"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:19
+msgid "apr"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:19
+msgid "may"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:19
+msgid "jun"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:20
+msgid "jul"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:20
+msgid "aug"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:20
+msgid "sep"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:20
+msgid "oct"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:20
+msgid "nov"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:20
+msgid "dec"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:23
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:24
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:25
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:26
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:27
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:28
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:29
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:30
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:31
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:32
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:33
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:34
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:37
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:38
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:39
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:40
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:41
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:42
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:43
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:44
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:45
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:46
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:47
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/dates.py:48
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/ipv6.py:8
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/text.py:67
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/text.py:233
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: venv/lib/python3.7/site-packages/django/utils/text.py:252
+#: venv/lib/python3.7/site-packages/django/utils/timesince.py:83
+msgid ", "
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/utils/timesince.py:9
+#, python-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.7/site-packages/django/utils/timesince.py:10
+#, python-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.7/site-packages/django/utils/timesince.py:11
+#, python-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.7/site-packages/django/utils/timesince.py:12
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.7/site-packages/django/utils/timesince.py:13
+#, python-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.7/site-packages/django/utils/timesince.py:14
+#, python-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.7/site-packages/django/utils/timesince.py:72
+msgid "0 minutes"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/csrf.py:110
+msgid "Forbidden"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/csrf.py:111
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/csrf.py:115
+msgid ""
+"You are seeing this message because this HTTPS site requires a 'Referer "
+"header' to be sent by your Web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/csrf.py:120
+msgid ""
+"If you have configured your browser to disable 'Referer' headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for 'same-"
+"origin' requests."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/csrf.py:124
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the 'Referrer-Policy: no-referrer' header, please remove them. The "
+"CSRF protection requires the 'Referer' header to do strict referer checking. "
+"If you're concerned about privacy, use alternatives like <a rel=\"noreferrer"
+"\" ...> for links to third-party sites."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/csrf.py:132
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/csrf.py:137
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for 'same-origin' requests."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/csrf.py:142
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:41
+msgid "No year specified"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:61
+#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:111
+#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:208
+msgid "Date out of range"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:90
+msgid "No month specified"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:142
+msgid "No day specified"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:188
+msgid "No week specified"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:338
+#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:367
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:589
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:623
+#, python-format
+msgid "Invalid date string '%(datestr)s' given format '%(format)s'"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/generic/detail.py:54
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/generic/list.py:67
+msgid "Page is not 'last', nor can it be converted to an int."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/generic/list.py:72
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/generic/list.py:154
+#, python-format
+msgid "Empty list and '%(class_name)s.allow_empty' is False."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/static.py:40
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/static.py:42
+#, python-format
+msgid "\"%(path)s\" does not exist"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/static.py:80
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/templates/default_urlconf.html:6
+msgid "Django: the Web framework for perfectionists with deadlines."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/templates/default_urlconf.html:345
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/templates/default_urlconf.html:367
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/templates/default_urlconf.html:368
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+"\">DEBUG=True</a> is in your settings file and you have not configured any "
+"URLs."
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/templates/default_urlconf.html:383
+msgid "Django Documentation"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/templates/default_urlconf.html:384
+msgid "Topics, references, &amp; how-to's"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/templates/default_urlconf.html:395
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/templates/default_urlconf.html:396
+msgid "Get started with Django"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/templates/default_urlconf.html:407
+msgid "Django Community"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/django/views/templates/default_urlconf.html:408
+msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:313
+msgid "usage: "
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:821
+msgid ".__call__() not defined"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1105
+#, python-format
+msgid "unknown parser %r (choices: %s)"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1146
+#, python-format
+msgid "argument \"-\" with mode %r"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1349
+#, python-format
+msgid "cannot merge actions - two groups are named %r"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1387
+msgid "'required' is an invalid argument for positionals"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1407
+#, python-format
+msgid "invalid option string %r: must start with a character %r"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1428
+#, python-format
+msgid "dest= is required for options like %r"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1445
+#, python-format
+msgid "invalid conflict_resolution value: %r"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1463
+#, python-format
+msgid "conflicting option string(s): %s"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1526
+msgid "mutually exclusive arguments must be optional"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1596
+msgid "positional arguments"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1597
+msgid "optional arguments"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1615
+msgid "show this help message and exit"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1621
+msgid "show program's version number and exit"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1653
+msgid "cannot have multiple subparser arguments"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1705
+#, python-format
+msgid "unrecognized arguments: %s"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1802
+#, python-format
+msgid "not allowed with argument %s"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1848
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1862
+#, python-format
+msgid "ignored explicit argument %r"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1952
+msgid "too few arguments"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1959
+#, python-format
+msgid "argument %s is required"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:1973
+#, python-format
+msgid "one of the arguments %s is required"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:2019
+msgid "expected one argument"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:2020
+msgid "expected at most one argument"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:2021
+msgid "expected at least one argument"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:2023
+#, python-format
+msgid "expected %s argument(s)"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:2080
+#, python-format
+msgid "ambiguous option: %s could match %s"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:2142
+#, python-format
+msgid "unexpected option string: %s"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:2243
+#, python-format
+msgid "%r is not callable"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:2259
+#, python-format
+msgid "invalid %s value: %r"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:2269
+#, python-format
+msgid "invalid choice: %r (choose from %s)"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/gunicorn/argparse_compat.py:2362
+#, python-format
+msgid "%s: error: %s\n"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/passlib/ext/django/utils.py:957
+msgid "algorithm"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/tornado/locale.py:345
+msgid "1 second ago"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/tornado/locale.py:350
+msgid "1 minute ago"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/tornado/locale.py:354
+msgid "1 hour ago"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/tornado/locale.py:358
+#, python-format
+msgid "%(time)s"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/tornado/locale.py:361
+msgid "yesterday"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/tornado/locale.py:362
+#, python-format
+msgid "yesterday at %(time)s"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/tornado/locale.py:364
+#, python-format
+msgid "%(weekday)s"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/tornado/locale.py:365
+#, python-format
+msgid "%(weekday)s at %(time)s"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/tornado/locale.py:367
+#: venv/lib/python3.7/site-packages/tornado/locale.py:409
+#, python-format
+msgid "%(month_name)s %(day)s"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/tornado/locale.py:368
+#, python-format
+msgid "%(month_name)s %(day)s at %(time)s"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/tornado/locale.py:371
+#, python-format
+msgid "%(month_name)s %(day)s, %(year)s"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/tornado/locale.py:372
+#, python-format
+msgid "%(month_name)s %(day)s, %(year)s at %(time)s"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/tornado/locale.py:403
+#, python-format
+msgid "%(weekday)s, %(month_name)s %(day)s"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/tornado/locale.py:426
+#, python-format
+msgid "%(commas)s and %(last)s"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/tornado/test/locale_test.py:69
+msgctxt "law"
+msgid "right"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/tornado/test/locale_test.py:70
+msgctxt "good"
+msgid "right"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/tornado/test/locale_test.py:71
+#: venv/lib/python3.7/site-packages/tornado/test/locale_test.py:72
+msgctxt "organization"
+msgid "club"
+msgstr ""
+
+#: venv/lib/python3.7/site-packages/tornado/test/locale_test.py:73
+#: venv/lib/python3.7/site-packages/tornado/test/locale_test.py:74
+msgctxt "stick"
+msgid "club"
+msgstr ""

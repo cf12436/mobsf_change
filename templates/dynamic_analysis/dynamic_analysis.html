@@ -1,0 +1,376 @@
+
+{% extends "base_top_only.html" %}
+{% load staticfiles %}
+{% block content %}
+<style>
+   textarea {
+ 
+  width: 100%;
+  height: 500px;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+  border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+  border-image: none;
+  border-radius: 6px 6px 6px 6px;
+  border-style: none solid solid none;
+  border-width: medium 1px 1px medium;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+  color: #555555;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+  padding: 5px 8px;
+  transition: background-color 0.2s ease 0s;
+}
+
+
+textarea:focus {
+    background: none repeat scroll 0 0 #FFFFFF;
+    outline-width: 0;
+}
+
+/* Loading */
+
+*.hidden {
+  display: none !important;
+}
+
+div.loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 16, 16, 0.5);
+}
+
+@-webkit-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.uil-ring-css {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+}
+.uil-ring-css > div {
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 160px;
+  top: 20px;
+  left: 20px;
+  border-radius: 80px;
+  box-shadow: 0 6px 0 0 #ffffff;
+  -ms-animation: uil-ring-anim 1s linear infinite;
+  -moz-animation: uil-ring-anim 1s linear infinite;
+  -webkit-animation: uil-ring-anim 1s linear infinite;
+  -o-animation: uil-ring-anim 1s linear infinite;
+  animation: uil-ring-anim 1s linear infinite;
+}
+
+/* disable button */
+{% if not identifier %}
+.btn {
+    background-color: #7b7b7b;
+    pointer-events: none;
+    cursor: default;
+}
+{% endif %}
+</style>
+
+
+    {% if not identifier %}
+    <div class="callout callout-danger">
+     <div class="row">
+         <div class="container">
+        <h4>Android Runtime not found!</h4>
+          <p> MobSF cannot find android instance identifier. Make sure that an android instance is running and refresh this page.</p><p> If this error persists, Please set <i>ANALYZER_IDENTIFIER</i> in <b>MobSF/settings.py</b>
+          </p>
+         </div>
+         </div>
+    </div>
+    {% endif %}
+  <div class="callout callout-info">
+    <div class="row">
+     <div class="container">
+            <p><b>MobSF Dynamic Analysis supports Genymotion Android x86 VMs version 4.1 to 9.0. We recommend using Android 7.0 and above.</b></p>
+            <p>For Android versions less than <b>5</b>, we use Xposed Framework and therefore, you must MobSFy the Android Runtime prior to Dynamic Analysis.<br /> Other versions use Frida and are automatically MobSFyed on the go.</p>
+            <p><b> HTTPS Traffic Interception</b></p>
+            <p>For Android version <b>4.1 - 4.3</b>, set Android VM proxy as <b>{% if proxy_ip %} {{ proxy_ip }}{% else %} <i>&lt;Host IP&gt;</i>{% endif %}:{{proxy_port}}</b><br/ >For Android versions <b>4.4 - 9</b>, global proxy settings are automatically applied. For more information, please refer <a href="">Documentation</a>.
+            </p>
+             
+         </div>
+         <div align="right"> <button class="btn btn-primary" role="button"  data-toggle="modal" data-target="#modal-mobsfy">MobSFy Android Runtime</button> <p>Android instance: <b>{{ identifier }}</b></p></div>
+      </div>
+    </div>
+    
+
+     <div class="row">
+       
+    <div class="box box-default">
+        <div class="box-header with-border">
+            <h3 class="box-title"><i class="fa fa-rocket"></i> Avaiable Binaries</h3>
+        </div>
+  
+        <div class="box-body">
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                    <tr>
+                        <th>App</th>
+                        <th>File Name</th>
+                        <th>Package</th>
+                        <th>Scan</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% if apks %}
+                    {% for e in apks %}
+                        <tr>
+                            <td>
+                             <img id="app_icon" src="
+                              {% if e.ICON_FOUND %}
+                                /download/{{ e.MD5 }}-icon.png
+                              {% else %}
+                                  {% static 'img/no_icon.png' %}
+                              {% endif %}
+                              "/><br /><b>{{ e.REAL_NAME }}</b>
+                              </td>
+                            <td>{{ e.APP_NAME }}<br/><br/>Hash: {{e.MD5}} </td>
+                            <td>{{ e.PACKAGENAME }}</td>
+                            <td>
+                            <a class="btn btn-success" onclick="dynamic_loader()" href="../android_dynamic/?hash={{e.MD5}}&amp;package={{e.PACKAGENAME}}"><i class="fa fa-android"></i> Start Dynamic Analysis</a>
+                              <p align="center"><br /><a href="../dynamic_report/?hash={{ e.MD5 }}&amp;package={{ e.PACKAGENAME }}"><i class="fa fa-file-text-o"></i> View Report </a>
+                              </p>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    {% endif %}
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <!-- /.box-body -->
+    </div>
+     </div>
+     <!-- Modal -->
+          <div class="modal fade" id="modal-mobsfy">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">MobSFy Android Runtime</h4>
+              </div>
+              <div class="modal-body">
+               <div class="box-body">
+              <form role="form">
+                <!-- text input -->
+                <div class="form-group">
+                    <label>IP &amp; Port</label>
+                     <input id="identifier" type="text" class="form-control" value="{{ identifier }}">
+                </div>
+                <div class="form-group">
+                  <label>Status</label>
+                  <textarea id="stat" class="form-control" rows="10" placeholder="" disabled=""></textarea>
+                </div>
+
+              </form>
+            </div>
+              </div>
+              <div class="modal-footer">
+                <button id="mobsfy" type="button" class="btn btn-primary">MobSFy!</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+{% endblock %}
+
+{% block extra_footer %}
+<div class="hidden loading">
+    <div class='uil-ring-css' style='transform:scale(0.79);'>
+    <div>
+</div>
+<script>
+
+
+function dynamic_loader(){
+    var loadingOverlay = document.querySelector('.loading');
+    loadingOverlay.classList.remove('hidden');
+}
+
+//MobSFy AJAX
+ $("#mobsfy").one( "click", function() {
+        $('#stat').append("\nMobSFying Android Runtime");
+        $.ajax({
+                url : "../mobsfy/", 
+                type : "POST",
+                dataType: "json", 
+                data : {
+                    csrfmiddlewaretoken: '{{ csrf_token }}',
+                    identifier: $('#identifier').val() ,
+                    },
+                    success : function(json) {
+                        if (json.status==="ok"){
+                              $('#stat').append("\nSucessfully created MobSF Dynamic Analysis environment.");
+                            if (json.version  < 5){
+                              $('#stat').append("\n* Download & Install Xposed Framework.\n* Restart the device.");
+                              $('#stat').append("\n* Enable all the Xposed modules.\n* Restart the device once more.");
+                            } else{
+                               $('#stat').append("\nMobSF agents and Frida server installed.");
+                            }
+                           
+                        }
+                        else if(json.status === "failed"){
+                            $('#stat').append(json.message);
+                        }
+                         $('#stat').scrollTop($('#stat')[0].scrollHeight);
+                    },
+                    error : function(xhr, errmsg, err) {
+                        $('#stat').append("\nERROR!!! \n\n"+ err);
+                        $('#stat').scrollTop($('#stat')[0].scrollHeight);
+                    }   
+        });
+    return false;  
+}); 
+</script>
+
+{% endblock %}

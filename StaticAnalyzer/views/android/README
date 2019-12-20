@@ -1,0 +1,41 @@
+这里包含下面文件与文件夹
+
+一个主脚本Main.py：
+    使用的时候直接运行，选择一个或多个待检测的Apk文件，会直接给出分析结果。
+    使用的时候请保证目录下存在model文件夹，并且其中存有已训练完成的模型文件，且在API_Test_Single.py脚本中选择与模型相同的网络文件。
+    使用的时候请保证目录下存在API_vector文件夹。
+
+四个网络模型文件：(在文件夹——代码文件下)
+    DNN1.py
+    DNN2.py
+    DNN3.py
+    DNN4.py
+    使用的时候请保证在API_Training.py与API_Test_Single.py中调用相同的网络模型文件。
+    API_Training.py中的学习率请根据注释进行调整。
+
+一个训练脚本：
+    API_Training.py
+    用来训练模型文件。
+    使用的时候请保证目录下存在model文件夹。
+    训练完成后保存的模型文件会存放在该文件夹下。
+
+一些组件：
+    Decode_dex.py：用来解码dex文件。
+    Clearup_dex.py：用来整理解码之后的smali代码。
+    get_APIvector.py：用来获得特征向量。
+    API列表-来自数据库.txt：特征列表。
+    baksmali-2.3.jar：解码工具。
+    上述文件使用的时候不需要手动调用，也不需要修改，放在目录下即可。
+
+一些组件：
+    input_data.py：在API_Training.py中被调用，其中可以调整训练使用的数据集。
+    API_Test_Single.py：用来对生成的特征向量进行判定。
+    上述文件使用的时候需要略作改动来满足主脚本的需求。
+
+数据集文件：(在文件夹——代码文件下)
+    安卓应用-API数据集：Train：Test = 3400 ：600，Malware：Benign = 1 : 1
+    安卓应用-API数据集(3000-1000)：Train：Test = 3000 ：1000，Malware：Benign = 1 : 1
+    安卓应用-API数据集(B=2M)：Train：Test = 2550 ：600，Malware：Benign = 1 : 2
+    安卓应用-API数据集(B=5M)：Train：Test = 2040 ：600，Malware：Benign = 1 : 5
+    模型的训练时会用到，在API_Training.py中修改相关常数即可。
+    Main.py中不会使用相关文件。
